@@ -54,7 +54,7 @@
 
         <div class="text-left">
             <button
-                class="btn btn-secondary mr-2"
+                class="btn btn-primary mr-2"
             >
                 {{ trans('messages.send') }}
             </button>

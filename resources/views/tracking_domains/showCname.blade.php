@@ -32,7 +32,7 @@
                             <p>{{ trans('messages.tracking_domain.cname.pending_note') }}</p>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-secondary text-nowrap">{{ trans('messages.tracking_domain.cname.refresh') }}</button>
+                        <button type="submit" class="btn btn-primary text-nowrap">{{ trans('messages.tracking_domain.cname.refresh') }}</button>
                     </div>
                 </form>
                 <h2>{{ trans('messages.tracking_domain.cname.dns_setup.title') }}</h2>
@@ -54,7 +54,7 @@
                                 </div>
 
                                 @if (!$domain->isVerified())
-                                    <a href="javascript:;" class="btn btn-secondary ml-auto tracking-domain-test">{{ trans('messages.tracking_domain.test') }}</a>
+                                    <a href="javascript:;" class="btn btn-primary ml-auto tracking-domain-test">{{ trans('messages.tracking_domain.test') }}</a>
                                     <div class="tracking-domain-test-message" style="display:none">
                                         <div class="modal-dialog shadow modal-default">
                                             <div class="modal-content">
@@ -71,7 +71,7 @@
                                                     ]) !!}
 
                                                     <div class="mt-4 pt-3 text-center">
-                                                        <a href="http://{{ $domain->name }}" class="btn btn-secondary mr-2" target="_blank">{{ trans('messages.tracking_domain.test.proceed') }}</a>
+                                                        <a href="http://{{ $domain->name }}" class="btn btn-primary mr-2" target="_blank">{{ trans('messages.tracking_domain.test.proceed') }}</a>
                                                         <button class="btn btn-link tracking-domain-test-close" target="_blank">{{ trans('messages.close') }}</button>
                                                     </div>
                                                 </div>

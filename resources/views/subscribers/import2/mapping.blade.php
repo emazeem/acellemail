@@ -141,7 +141,7 @@
             @endif
 
             <a mapping-control="run" href="javascript:;"
-                class="btn btn-mc_primary bg-teal-800 mt-4"
+                class="btn btn-primary mt-4"
             >
                 {{ trans('messages.subscriber.import.start') }}
             </a>

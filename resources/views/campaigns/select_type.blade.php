@@ -23,7 +23,7 @@
             @foreach (Acelle\Model\Campaign::types() as $key => $type)
 
                 <li>
-                    <a href="{{ action("CampaignController@create", ["type" => $key]) }}" class="btn btn-secondary">{{ trans('messages.choose') }}</a>
+                    <a href="{{ action("CampaignController@create", ["type" => $key]) }}" class="btn btn-primary">{{ trans('messages.choose') }}</a>
                     <div class="d-flex pe-4">
                         <a href="{{ action("CampaignController@create", ["type" => $key]) }}">
                             <span class="pt-1 d-block">
@@ -48,7 +48,7 @@
 
         </ul>
         <div class="">
-            <a href="{{ action('CampaignController@index') }}" role="button" class="btn btn-secondary">
+            <a href="{{ action('CampaignController@index') }}" role="button" class="btn btn-danger">
                 <i class="icon-cross2"></i> {{ trans('messages.cancel') }}
             </a>
         </div>

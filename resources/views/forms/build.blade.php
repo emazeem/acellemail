@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ trans('messages.form.builder') }} - {{ $form->name }} - {{ \Acelle\Model\Setting::get("site_name") }}</title>
-	
+
 	@include('layouts.core._head')
 	@include('layouts.core._script_vars')
 
@@ -32,10 +32,10 @@
                         <span class="label label-flat bg-{{ $form->status }}">{{ trans('messages.form.status.' . $form->status) }}</span>
                     </div>
                 </div>
-                    
+
             </span>
             <div class="ms-auto">
-                <button onscreen-control="save-button" class="me-2 builder-save-button btn btn-secondary" href="{{ action('FormController@index') }}">
+                <button onscreen-control="save-button" class="me-2 builder-save-button btn btn-primary" href="{{ action('FormController@index') }}">
                     <div class="d-flex align-items-center">
                         <span class="material-symbols-rounded me-2">task_alt</span>
                             <span>{{ trans('messages.form.builder.save') }}</span>
@@ -52,8 +52,8 @@
                             <span class="material-symbols-rounded me-2">task_alt</span>
                                 <span>{{ trans('messages.form.publish') }}</span>
                         </div>
-                            
-                    </a>                    
+
+                    </a>
                 @endif
                 @if (Auth::user()->customer->can('unpublish', $form))
                     <a onscreen-control="publish-unpublish-button" href="{{ action('FormController@unpublish', [
@@ -63,7 +63,7 @@
                             <span class="material-symbols-rounded me-2">do_disturb_on</span>
                                 <span>{{ trans('messages.form.unpublish') }}</span>
                         </div>
-                            
+
                     </a>
                 @endif
                 <a href="javascript:;" class="me-2 builder-view-button btn btn-default">
@@ -71,13 +71,13 @@
                         <span class="material-symbols-rounded me-2">featured_video</span>
                             <span>{{ trans('messages.form.open_popup') }}</span>
                     </div>
-                </a> 
+                </a>
             </div>
-            
-            
-            
+
+
+
             <div>
-                
+
                 <a class="fs-4 builder-exit-button" href="{{ action('FormController@index') }}"><span class="material-symbols-rounded">close</span></a>
             </div>
             <script>
@@ -89,17 +89,17 @@
                         addButtonMask(but);
                         // save
                         FormsEdit.getFormsBuilder().save(function() {
-                            
+
                             // do publish/unpublish
                             FormsEdit.topAction(but.attr('href'));
-                        })                        
+                        })
                     });
 
                     // view
                     $('.builder-view-button').on('click', function() {
                         FormsEdit.openPopup();
                     });
-                    
+
                     // save
                     $('.builder-save-button').on('click', function() {
                         var button = $(this);
@@ -135,7 +135,7 @@
                             <span class="material-symbols-rounded" style="line-height:30px">keyboard_backspace</span>
                         </a>
                         <h6 class="d-inline ml-2 m-0">{{ trans('messages.form.layouts') }}</h6>
-                    </div>  
+                    </div>
                     <hr>
                     <div class="">
                         @foreach ($templates->take(5) as $template)
@@ -147,20 +147,20 @@
                             </a>
                         @endforeach
                     </div>
-                </div>  
+                </div>
             </div>
             <div onscreen-control="themes-button" class="styles-section form-theme">
                 <a href="javascript:;" class="styles-menu-button styles-toggle px-2 py-1">
                     <span class="material-symbols-rounded" style="line-height:30px">web</span>
                 </a>
-                <div class="styles-container shadow rounded overflow-hidden p-4">    
+                <div class="styles-container shadow rounded overflow-hidden p-4">
                     <div class="d-flex align-items-center styles-container-heading shadow-sm">
                         <a role="button" href="javascript:;" class="styles-back px-2 py-1">
                             <span class="material-symbols-rounded" style="line-height:30px">keyboard_backspace</span>
                         </a>
                         <h6 class="d-inline ml-2 m-0">{{ trans('messages.form.themes') }}</h6>
-                    </div>                    
-                        
+                    </div>
+
                     <hr>
                     <div class="">
                         @foreach ($templates->skip(5) as $template)
@@ -172,7 +172,7 @@
                             </a>
                         @endforeach
                     </div>
-                </div>  
+                </div>
             </div>
             <div onscreen-control="settings-button" class="styles-section form-theme">
                 <a href="javascript:;" class="styles-menu-button styles-toggle px-2 py-1">
@@ -181,14 +181,14 @@
                 <div class="styles-container shadow rounded overflow-hidden p-4" style="
                     overflow-x:hidden!important; height:auto;
                     max-height: calc(100vh - 100px);
-                ">    
+                ">
                     <div class="d-flex align-items-center styles-container-heading shadow-sm">
                         <a role="button" href="javascript:;" class="styles-back px-2 py-1">
                             <span class="material-symbols-rounded" style="line-height:30px">keyboard_backspace</span>
                         </a>
                         <h6 class="d-inline ml-2 m-0">{{ trans('messages.form.form_settings') }}</h6>
-                    </div>                    
-                        
+                    </div>
+
                     <hr>
                     <div class="" style="width:201px">
                         <form id="FormDisplaySetting" action="{{ action('FormController@settings', [
@@ -250,7 +250,7 @@
                                     ],
                                 ])
                             </div>
-                            
+
                             <div class="display-select-page-load mb-3">
                                 <div class="">
                                     <p class="small text-muted mb-1">{{ trans('messages.form.display.immediately.desc') }}</p>
@@ -262,11 +262,11 @@
                                     <p class="small text-muted mb-1">{{ trans('messages.form.display.first_visit.desc') }}</p>
                                 </div>
                             </div>
-                            
+
                             <div class="display-select-wait mb-3">
                                 <div class="">
                                     <p class="small text-muted mb-1">{{ trans('messages.form.display.wait_time.desc') }}</p>
-                                    <label class="mb-2">{{ trans('messages.form.display.wait_time') }}</label>                                    
+                                    <label class="mb-2">{{ trans('messages.form.display.wait_time') }}</label>
                                     @include('helpers.form_control.number', [
                                         'name' => 'wait_time',
                                         'value' => $form->getMetadata('wait_time') ? $form->getMetadata('wait_time') : '5',
@@ -281,7 +281,7 @@
 
                             <div class="display-select-element mb-3">
                                 <p class="small text-muted mb-1">{{ trans('messages.form.display.element_id.desc') }}</p>
-                                <label class="mb-2">{{ trans('messages.form.display.element_id') }}</label>                                
+                                <label class="mb-2">{{ trans('messages.form.display.element_id') }}</label>
                                 @include('helpers.form_control.text', [
                                     'name' => 'element_id',
                                     'value' => $form->getMetadata('element_id') ? $form->getMetadata('element_id') : '',
@@ -306,12 +306,12 @@
                             </div>
                         </form>
                     </div>
-                </div>  
+                </div>
             </div>
             <div onscreen-control="preview-button" class="styles-section form-theme">
                 <a href="javascript:;" class="styles-menu-button preview-popup px-2 py-1">
                     <span class="material-symbols-rounded xtooltip" title="{{ trans('messages.preview') }}" style="line-height:30px">visibility</span>
-                </a> 
+                </a>
             </div>
         </div>
     </div>
@@ -364,12 +364,12 @@
 
                         group.button.on('click', function() {
                             // toggle container
-                            group.show();                       
+                            group.show();
                         });
 
                         group.back.on('click', function() {
                             // toggle container
-                            group.hide();                       
+                            group.hide();
                         });
                     });
                 }
@@ -390,7 +390,7 @@
                             return $('[name="display"]').val();
                         }
                     });
-                    
+
                     _this.displayManager.add({
                         box: $('.display-select-first_visit'),
                         value: 'first_visit',
@@ -429,7 +429,7 @@
                         });
 
                         group.check();
-                    });                        
+                    });
                 }
                 return this.styleManager;
             },
@@ -539,7 +539,7 @@
 
                     popup.load();
                 });
-                
+
             },
 
             refreshNavbar: function(callback) {
@@ -576,7 +576,7 @@
                         _token: CSRF_TOKEN,
                     },
                     before: function() {
-                        
+
                     },
                     done: function(response) {
                         notify({
@@ -621,11 +621,11 @@
                 });
             }
         }
-        
+
         $(function() {
             FormsEdit.getSettingsManager();
             FormsEdit.getDisplayManager();
-            
+
 
             // remove loadding effect
             $('.lds-dual-ring').remove();
@@ -733,7 +733,7 @@
                 // init textbox
                 this.initTextbox();
 
-                // 
+                //
                 this.loadStep(this.currentStepNumber);
 
                 // events
@@ -765,7 +765,7 @@
 
                     return;
                 }
-                
+
                 this.loadStep(this.currentStepNumber);
             }
 
@@ -846,7 +846,7 @@
             showHightlightBox() {
                 this.hightlightBox.show();
             }
-            
+
             initArrow() {
                 this.arrow = $(`<div class="onscreen-arrow" style="
                     position: fixed;

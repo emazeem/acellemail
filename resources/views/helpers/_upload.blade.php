@@ -18,7 +18,7 @@
                 <div class="mb-2">
                     <a href="#remove" class=" remove-profile-image"> {{ trans('messages.remove_current_photo') }}</a>
                 </div>
-                <a href="#upload" onclick="$('input[name=image]').trigger('click')" class="btn btn-secondary">{{ trans('messages.upload_photo') }}</a>
+                <a href="#upload" onclick="$('input[name=image]').trigger('click')" class="btn btn-primary">{{ trans('messages.upload_photo') }}</a>
             </div>
         </div>
     </div>

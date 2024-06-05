@@ -24,7 +24,7 @@
             <ul class="modern-listing big-icon no-top-border-list mt-0">
                 @foreach($more as $server)
                     <li>
-                        <a href="{{ $server['create_url'] }}" class="btn btn-secondary">{{ trans('messages.choose') }}</a>
+                        <a href="{{ $server['create_url'] }}" class="btn btn-primary">{{ trans('messages.choose') }}</a>
                         <a href="{{ $server['create_url'] }}">
                             <span class="mc-server-avatar shadow-sm rounded server-avatar" style="background: url({{ $server['icon_url']  }}) top left/36px 36px no-repeat transparent;">
                                 <span class="material-symbols-rounded"></span>
@@ -42,7 +42,7 @@
                 @foreach (Auth::user()->customer->getSendingServertypes() as $key => $type)
 
                     <li>
-                        <a href="{{ action('SendingServerController@create', ["type" => $key]) }}" class="btn btn-secondary">{{ trans('messages.choose') }}</a>
+                        <a href="{{ action('SendingServerController@create', ["type" => $key]) }}" class="btn btn-primary">{{ trans('messages.choose') }}</a>
                         <a href="{{ action('SendingServerController@create', ["type" => $key]) }}">
                             <span class="mc-server-avatar shadow-sm rounded server-avatar server-avatar-{{ $key }}">
                                 <span class="material-symbols-rounded"></span>
@@ -56,7 +56,7 @@
                 @endforeach
             </ul>
             <div class="">
-                <a href="{{ action('SendingServerController@index') }}" role="button" class="btn btn-secondary">
+                <a href="{{ action('SendingServerController@index') }}" role="button" class="btn btn-primary">
                     <i class="icon-cross2"></i> {{ trans('messages.cancel') }}
                 </a>
             </div>

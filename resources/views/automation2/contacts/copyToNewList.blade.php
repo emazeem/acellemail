@@ -27,7 +27,7 @@
                 ])
 
                 <div class="mt-4">
-                    <button class="btn btn-secondary">{{ trans('messages.automation.contacts.copy_to_new_list.copy') }}</button>
+                    <button class="btn btn-primary">{{ trans('messages.automation.contacts.copy_to_new_list.copy') }}</button>
                 </div>
         </div>
     </div>

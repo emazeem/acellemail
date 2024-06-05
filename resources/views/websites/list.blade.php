@@ -50,14 +50,14 @@
                             'uids' => [$website->uid],
                         ]) }}"
                             link-method="POST"
-                            role="button" class="btn btn-secondary list-action-single">
+                            role="button" class="btn btn-primary list-action-single">
                             <span class="material-symbols-rounded me-1">pause_circle</span> {{ trans('messages.website.disconnect') }}
                         </a>
                     @endif
                     
                     @if (Auth::user()->customer->can('connect', $website))
                         <a href="{{ action('WebsiteController@connect', $website->uid) }}"
-                            role="button" class="btn btn-secondary connect-site">
+                            role="button" class="btn btn-primary connect-site">
                             <span class="material-symbols-rounded me-1">pause_circle</span> {{ trans('messages.website.check_connection') }}
                         </a>
                     @endif

@@ -6,7 +6,7 @@
 
 @section('footer')
     <div class="text-end">
-        <button id="CopyOneClickLoginUrl" class="btn btn-secondary me-1" type="button">
+        <button id="CopyOneClickLoginUrl" class="btn btn-primary me-1" type="button">
             <span class="material-symbols-rounded">
                 content_copy
                 </span> {{ trans('messages.admin.one_cick_login.copy') }}

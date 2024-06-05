@@ -41,7 +41,7 @@
                 ])
                     
                 <div class="text-end">
-                    <button class="btn btn-secondary mr-2">
+                    <button class="btn btn-primary mr-2">
                         {{ trans('messages.upload') }}
                     </button>
                     <a href="{{ action('Admin\PluginController@index') }}" class="btn btn-primary">

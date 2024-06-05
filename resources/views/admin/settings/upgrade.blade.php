@@ -47,7 +47,7 @@
                             <a href="{{ action('Admin\SettingController@doUpgrade') }}" role="button" class="btn btn-primary me-1 upgrade-now">
                                 {{ trans('messages.upgrade.button.retry') }}
                             </a>
-                            <a link-confirm="{{ trans('messages.upgrade.upgrade_cancel') }}" href="{{ action('Admin\SettingController@cancelUpgrade') }}" role="button" class="btn btn-secondary btn-icon" link-method="POST">
+                            <a link-confirm="{{ trans('messages.upgrade.upgrade_cancel') }}" href="{{ action('Admin\SettingController@cancelUpgrade') }}" role="button" class="btn btn-primary btn-icon" link-method="POST">
                                 {{ trans('messages.upgrade.button.cancel') }}
                             </a>
                         </p>
@@ -58,7 +58,7 @@
                             <a href="{{ action('Admin\SettingController@doUpgrade') }}" role="button" class="btn btn-primary me-1 upgrade-now">
                                 {{ trans('messages.upgrade.button.upgrade_now') }}
                             </a>
-                            <a link-confirm="{{ trans('messages.upgrade.upgrade_cancel') }}" href="{{ action('Admin\SettingController@cancelUpgrade') }}" role="button" class="btn btn-secondary btn-icon" link-method="POST">
+                            <a link-confirm="{{ trans('messages.upgrade.upgrade_cancel') }}" href="{{ action('Admin\SettingController@cancelUpgrade') }}" role="button" class="btn btn-primary btn-icon" link-method="POST">
                                 {{ trans('messages.upgrade.button.cancel') }}
                             </a>
                         </p>
@@ -117,7 +117,7 @@
                             {{ csrf_field() }}
 
                             @include('helpers.form_control', ['required' => true, 'type' => 'file', 'label' => '', 'name' => 'file', 'value' => 'Upload'])
-                            <button class="btn btn-secondary upload-button">{{ trans('messages.upload') }}</button>
+                            <button class="btn btn-primary upload-button">{{ trans('messages.upload') }}</button>
                         </form>
                     @endif
                 </div>

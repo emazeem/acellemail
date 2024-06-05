@@ -45,7 +45,7 @@
                     'rules' => ['plain' => 'required'],
                 ])
 
-                <button class="btn btn-secondary">{{ trans('messages.campaign.plain.save') }}</button>
+                <button class="btn btn-primary">{{ trans('messages.campaign.plain.save') }}</button>
             </form>
         </div>
     </div>

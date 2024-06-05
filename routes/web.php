@@ -1273,3 +1273,6 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['not_installed', 'auth', 
     Route::post('admin/verify/index', 'VerificationController@index');
     Route::get('admin/verify/index', 'VerificationController@index');
 });
+// https://panel.simplysendin.com/templates/digit/css/theme-dark.scss
+
+// https://panel.simplysendin.com/templates/orderforms/digit-of/css/all.min.css?v=218d08

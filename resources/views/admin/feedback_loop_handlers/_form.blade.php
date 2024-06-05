@@ -99,7 +99,7 @@
             <span class="material-symbols-rounded">quiz</span> {{ trans('messages.feedback_loop_handler.test') }}
         </a>
     @endcan
-    <button class="btn btn-secondary"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
+    <button class="btn btn-primary"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
 </div>
 
 <script>

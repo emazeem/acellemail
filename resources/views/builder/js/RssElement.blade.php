@@ -148,11 +148,11 @@
             var button;
             if (this.getOptions().preview == 'no') {
                 button = `
-                    <button class="btn btn-secondary ace-rss-button ace-preview shadown-sm" style="display:none">{{ trans('messages.rss.preview') }}</button>
+                    <button class="btn btn-primary ace-rss-button ace-preview shadown-sm" style="display:none">{{ trans('messages.rss.preview') }}</button>
                 `;
             } else {
                 button = `
-                    <button class="btn btn-secondary ace-rss-button ace-unpreview shadown-sm" style="display:none">{{ trans('messages.rss.unpreview') }}</button>
+                    <button class="btn btn-primary ace-rss-button ace-unpreview shadown-sm" style="display:none">{{ trans('messages.rss.unpreview') }}</button>
                 `;
             }
 

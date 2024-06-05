@@ -58,7 +58,7 @@
                     <p>{{ trans('messages.store.connected.desc') }}</p>
                 </div>
                 <div class="text-right">
-                    <a href="" class="btn btn-secondary">{{ trans('messages.source.refresh') }}</a>
+                    <a href="" class="btn btn-primary">{{ trans('messages.source.refresh') }}</a>
                 </div>
             </div>
 
@@ -141,7 +141,7 @@
                             </div>
                         </div>
                         <div class="desc-action ml-auto">
-                            <a href="javascript:;" class="btn btn-secondary launch-automation">{{ trans('messages.edit') }}</a>
+                            <a href="javascript:;" class="btn btn-primary launch-automation">{{ trans('messages.edit') }}</a>
                         </div>
                     </div>
                 @else
@@ -154,7 +154,7 @@
                             <div class="">{{ trans('messages.source.abandoned_cart_email.desc') }}</div>
                         </div>
                         <div class="desc-action ml-auto">
-                            <a href="javascript:;" class="btn btn-secondary launch-automation">{{ trans('messages.source.launch') }}</a>
+                            <a href="javascript:;" class="btn btn-primary launch-automation">{{ trans('messages.source.launch') }}</a>
                         </div>
                     </div>
                 @endif

@@ -66,7 +66,7 @@
                 </td>
                 <td class="text-end text-nowrap pe-0" width="5%">
                     @can('update', $plan)
-                        <a href="{{ action('Admin\PlanController@general', $plan->uid) }}" role="button" class="btn btn-secondary btn-icon"> <span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
+                        <a href="{{ action('Admin\PlanController@general', $plan->uid) }}" role="button" class="btn btn-primary btn-icon"> <span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
                     @endcan
                     @if (\Auth::user()->can('delete', $plan) ||
                          \Auth::user()->can('copy', $plan)

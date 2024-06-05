@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="{{ action("Site\SourceController@create") }}" role="button" class="btn btn-secondary m-icon">
+                <a href="{{ action("Site\SourceController@create") }}" role="button" class="btn btn-primary m-icon">
                     <span class="material-symbols-rounded">add</span> {{ trans('messages.source.add_new') }}
                 </a>
             </div>

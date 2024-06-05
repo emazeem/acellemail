@@ -68,7 +68,7 @@
         </div>
         <div class="col-md-6">
             <br>
-            <a target="_blank" confirm="{{ trans('messages.sending_server.aws.add_domain_redirect_confirm') }}" href="https://us-west-2.console.aws.amazon.com/ses/home?region={{ $server->type }}" class="btn btn-secondary me-2">
+            <a target="_blank" confirm="{{ trans('messages.sending_server.aws.add_domain_redirect_confirm') }}" href="https://us-west-2.console.aws.amazon.com/ses/home?region={{ $server->type }}" class="btn btn-primary me-2">
                 {{ trans('messages.sending_serbers.add_domain') }}
             </a>
             <a target="_blank" href="https://console.aws.amazon.com/ses/home?region={{ $server->aws_region }}" role="button"
@@ -110,7 +110,7 @@
 
             <hr>
             <div class="mt-20">
-                <button class="btn btn-secondary me-2">{{ trans('messages.save') }}</button>
+                <button class="btn btn-primary me-2">{{ trans('messages.save') }}</button>
                 <a href="{{ action('Admin\SendingServerController@index') }}" role="button" class="btn btn-link">
                     {{ trans('messages.cancel') }}
                 </a>

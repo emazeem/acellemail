@@ -15,7 +15,7 @@
     </div>
 
     <div class="text-end">
-        <a href="{{ action('InstallController@database') }}" class="btn btn-secondary me-1"><span class="material-symbols-rounded">undo</span> {!! trans('messages.back') !!}</a>
+        <a href="{{ action('InstallController@database') }}" class="btn btn-primary me-1"><span class="material-symbols-rounded">undo</span> {!! trans('messages.back') !!}</a>
         <a href="{{ action('InstallController@import') }}" class="btn btn-primary db-setup">{{ trans('messages.install.setup_database') }} <span class="material-symbols-rounded">east</span></a>
 		
     </div>

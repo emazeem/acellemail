@@ -39,7 +39,7 @@
                     
                     @if (Auth::user()->customer->can('read', $trackingDomain))
                         <a href="{{ action('TrackingDomainController@show', $trackingDomain->uid) }}" data-popup="tooltip"
-                            title="{{ trans('messages.tracking_domain.view') }}" role="button" class="btn btn-secondary">
+                            title="{{ trans('messages.tracking_domain.view') }}" role="button" class="btn btn-primary">
                             <span class="material-symbols-rounded">zoom_in</span> {{ trans('messages.tracking_domain.view') }}
                         </a>
                     @endif

@@ -10,7 +10,7 @@
     @endif
     
     <div class="trigger-action mt-2">    
-        <button class="btn btn-secondary action-save-change mr-1 mt-2"
+        <button class="btn btn-primary action-save-change mr-1 mt-2"
             data-url="{{ action('Automation2Controller@triggerSelect', ['uid' => $automation->uid, 'key' => $key]) }}"
         >
                 {{ trans('messages.automation.action.save_change') }}
@@ -28,11 +28,11 @@
         </p>
         <div class="mt-3">
             @if ($element->get('type') == 'ElementCondition')
-                <a href="javascript:;" class="btn btn-secondary condition-delete">
+                <a href="javascript:;" class="btn btn-primary condition-delete">
                     <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.remove_this_action') }}
                 </a>
             @else
-                <a href="javascript:;" class="btn btn-secondary action-delete">
+                <a href="javascript:;" class="btn btn-primary action-delete">
                     <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.remove_this_action') }}
                 </a>
             @endif

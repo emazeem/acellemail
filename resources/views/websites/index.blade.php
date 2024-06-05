@@ -32,7 +32,7 @@
                     <div class="dropdown list_actions" style="display: none">
                         <button type="button"
                             id="dropdownListActions"
-                            class="btn btn-secondary dropdown-toggle"
+                            class="btn btn-primary dropdown-toggle"
                             data-bs-toggle="dropdown"
                         >
                             {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="{{ action('WebsiteController@create') }}" role="button" class="btn btn-secondary">
+                <a href="{{ action('WebsiteController@create') }}" role="button" class="btn btn-primary">
                     <span class="material-symbols-rounded">add</span> {{ trans('messages.website.add') }}
                 </a>
             </div>

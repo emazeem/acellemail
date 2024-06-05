@@ -7,7 +7,7 @@
         <span><span progress-control="percentage">{{ $progress['percentage'] }}</span>%</span>
     </div>
     <div class="progress mt-2">
-        <div progress-control="percentage-bar" class="progress-bar progress-bar-striped bg-info" style="width: {{ $progress['percentage'] }}%">
+        <div progress-control="percentage-bar" class="progress-bar progress-bar-striped bg-primary" style="width: {{ $progress['percentage'] }}%">
         </div>
     </div>
 
@@ -23,7 +23,7 @@
 
     <div class="mt-4">
         @if ($progress['status'] == 'done')
-            <a id="ImportFinishButton" href="javascript:;" class="btn btn-secondary me-1" progress-control="cancel">
+            <a id="ImportFinishButton" href="javascript:;" class="btn btn-primary me-1" progress-control="cancel">
                 {{ trans('messages.finish') }}
             </a>
             <a href="{{ action('SubscriberController@downloadImportLog', ['job_uid' => $currentJob->uid]) }}" class="btn btn-default" progress-control="cancel">

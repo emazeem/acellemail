@@ -136,13 +136,13 @@
 					
 					@if (\Auth::user()->admin->can('disableRecurring', $subscription))
 						<a link-method="POST" link-confirm="{{ trans('messages.subscription.disable_recurring.confirm') }}"
-						  href="{{ action('Admin\SubscriptionController@disableRecurring', $subscription->uid) }}" class="btn btn-secondary list-action-single">
+						  href="{{ action('Admin\SubscriptionController@disableRecurring', $subscription->uid) }}" class="btn btn-primary list-action-single">
 							{{ trans('messages.subscription.disable_recurring') }}
 						</a>
 					@endif
 					@if (\Auth::user()->admin->can('enableRecurring', $subscription))
 						<a link-method="POST" link-confirm="{{ trans('messages.subscription.enable_recurring.confirm') }}"
-						  href="{{ action('Admin\SubscriptionController@enableRecurring', $subscription->uid) }}" class="btn btn-secondary list-action-single">
+						  href="{{ action('Admin\SubscriptionController@enableRecurring', $subscription->uid) }}" class="btn btn-primary list-action-single">
 							{{ trans('messages.subscription.enable_recurring') }}
 						</a>
 					@endif

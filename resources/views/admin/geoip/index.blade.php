@@ -48,7 +48,7 @@
                         >
                             Setting
                         </a>
-                        <a id="EditGeoIpReset" href="#" class="btn btn-secondary">
+                        <a id="EditGeoIpReset" href="#" class="btn btn-primary">
                         Reset
                         </a>
                     </td>

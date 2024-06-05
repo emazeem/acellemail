@@ -84,7 +84,7 @@
                     
                     @if (Auth::user()->customer->can('read', $item))
                         <a href="{{ action('SendingDomainController@show', $item->uid) }}" data-popup="tooltip"
-                            title="{{ trans('messages.sending_domain.view') }}" role="button" class="btn btn-secondary btn-icon">
+                            title="{{ trans('messages.sending_domain.view') }}" role="button" class="btn btn-primary btn-icon">
                                 {{ trans('messages.sending_domain.view') }}
                         </a>
                     @endif

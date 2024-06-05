@@ -41,7 +41,7 @@
                         <p>{{ trans('messages.plan_option.sub_account.intro') }}</p>
                     </div>
                     <div class="col-md-4 text-end">
-                        <a class="btn btn-secondary mr-20 change-server-type-button" modal-size="lg" href="{{ action('Admin\PlanController@sendingServerOption', [
+                        <a class="btn btn-primary mr-20 change-server-type-button" modal-size="lg" href="{{ action('Admin\PlanController@sendingServerOption', [
                             'uid' => $plan->uid]) }}">
                                 {{ trans('messages.plan_option.change') }}</a>
                     </div>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-secondary me-2">{{ trans('messages.save') }}</button>
+                        <button class="btn btn-primary me-2">{{ trans('messages.save') }}</button>
                     @else
                         <div class="alert alert-danger">
                             {!! trans('messages.plan_option.there_no_subaccount_sending_server') !!}

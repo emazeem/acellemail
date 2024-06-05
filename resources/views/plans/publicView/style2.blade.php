@@ -167,7 +167,7 @@
                             ]) }}
                         </span>
                         <div class="mt-2">
-                            <button data-action="logout"  class="btn btn-secondary me-1">
+                            <button data-action="logout"  class="btn btn-primary me-1">
                                 <i class="icon-switch2"></i> {{ trans('messages.logout') }}
                             </button>
 

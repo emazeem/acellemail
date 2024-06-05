@@ -1,9 +1,23 @@
 .theme-brown .navbar-main {
     background: -webkit-repeating-linear-gradient(rgba(59, 38, 13, 0.8), black)!important;
 }
+.theme-brown main.page-container{
+    background: #fdf5ee;
+}
+.theme-brown .bg-primary{
+    background: -webkit-repeating-linear-gradient(rgba(59, 38, 13, 0.8), black)!important;
+    color: white;
+}
 .theme-brown .btn-info {
     background-color: #c9ab97;
     border-color: #c9ab97;
+}
+.mode-dark.theme-brown main.page-container{
+    background: #81430f;
+}
+.theme-brown .btn-primary {
+    background:  -webkit-repeating-linear-gradient(#81430f, black)!important;
+    border-color: #62330c !important;
 }
 .theme-brown .btn-info:hover {
     background-color: #b19779;
@@ -52,11 +66,19 @@
 .theme-brown .progress-bar {
     background-color: #a15313;
 }
+.theme-brown .media.profile-image{
+    color:black
+}
 .theme-brown .nav-tabs > li.active > a.nav-link,
 .theme-brown .nav-tabs > li > a.nav-link.active,
 .theme-brown .nav-tabs > li > a.nav-link:hover,
 .theme-brown .nav-tabs > li > a.nav-link:focus {
-    border-bottom-color: #a15313;
+    background: rgb(37, 29, 15);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(21, 16, 9);
 }
 body.mode-dark.theme-brown,
 body.mode-dark.theme-brown .modal-content,

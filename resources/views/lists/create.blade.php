@@ -17,13 +17,14 @@
 @endsection
 
 @section('content')
-    <form action="{{ action('MailListController@store') }}" method="POST" class="form-validate-jqueryz">
-        {{ csrf_field() }}
-        @include("lists._form")
-        <hr>
-        <div class="text-left">
-            <button class="btn btn-secondary me-2"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
-            <a href="{{ action('MailListController@index') }}" class="btn btn-link"><i class="icon-cross2"></i> {{ trans('messages.cancel') }}</a>
-        </div>
-    </form>
+    <div class="row">
+        <form action="{{ action('MailListController@store') }}" method="POST" class="form-validate-jqueryz">
+            {{ csrf_field() }}
+            @include("lists._form")
+            <div class="text-left">
+                <button class="btn btn-primary me-2"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
+                <a href="{{ action('MailListController@index') }}" class="btn btn-danger"><i class="icon-cross2"></i> {{ trans('messages.cancel') }}</a>
+            </div>
+        </form>
+    </div>
 @endsection

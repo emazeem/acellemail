@@ -167,7 +167,7 @@
                         </p>
                     </div>
                     <div class="ms-auto">
-                        <a href="{{ action('FormController@index') }}" class="btn btn-secondary py-2 px-4">
+                        <a href="{{ action('FormController@index') }}" class="btn btn-primary py-2 px-4">
                             {{ trans('messages.form.create') }}
                         </a>
                     </div>

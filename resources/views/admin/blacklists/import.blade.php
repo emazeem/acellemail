@@ -40,7 +40,7 @@
                 ])
 
                 <div class="text-left">
-                    <button class="btn btn-secondary me-2 click-effect"><i class="icon-check"></i> {{ trans('messages.import') }}</button>
+                    <button class="btn btn-primary me-2 click-effect"><i class="icon-check"></i> {{ trans('messages.import') }}</button>
                 </div>
 
             </form>
@@ -76,13 +76,13 @@
 
                 </div>
                 <label style="margin-bottom:20px;font-style:italic;" id="bottomNotice"></label>
-                <a id="cancelBtn" class="btn btn-secondary btn-icon cancel processing">
+                <a id="cancelBtn" class="btn btn-primary btn-icon cancel processing">
                     {{ trans('messages.cancel') }}
                 </a>
 
                 <div class="form-group finish hide">
                     <div class="text-left">
-                        <a id="doneBtn" target="_blank" href="#" type="button" class="btn btn-secondary success">
+                        <a id="doneBtn" target="_blank" href="#" type="button" class="btn btn-primary success">
                             {{ trans('messages.label.done') }}
                         </a>
                     </div>

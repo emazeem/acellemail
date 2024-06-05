@@ -29,7 +29,7 @@
                 ])
 
                 <div class="mt-4">
-                    <button class="btn btn-secondary">{{ trans('messages.automation.profile.tag') }}</button>
+                    <button class="btn btn-primary">{{ trans('messages.automation.profile.tag') }}</button>
                 </div>
         </div>
     </div>

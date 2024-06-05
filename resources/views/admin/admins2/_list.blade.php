@@ -38,10 +38,10 @@
                 </td>
                 <td class="text-end">
                     @can('loginAs', $item)
-                        <a href="{{ action('Admin\Admin2Controller@loginAs', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.login_as_this_admin') }}" role="button" class="btn btn-secondary btn-icon"><span class="material-symbols-rounded">login</span></a>
+                        <a href="{{ action('Admin\Admin2Controller@loginAs', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.login_as_this_admin') }}" role="button" class="btn btn-primary btn-icon"><span class="material-symbols-rounded">login</span></a>
                     @endcan
                     @can('update', $item)
-                        <a href="{{ action('Admin\Admin2Controller@edit', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-secondary btn-icon"><span class="material-symbols-rounded">edit</span></a>
+                        <a href="{{ action('Admin\Admin2Controller@edit', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-primary btn-icon"><span class="material-symbols-rounded">edit</span></a>
                     @endcan
                     @if (Auth::user()->can('delete', $item) || Auth::user()->can('enable', $item) || Auth::user()->can('disable', $item) || Auth::user()->can('delete', $item))
                         <div class="btn-group">

@@ -27,7 +27,7 @@
 
                 </div>
                 
-                <button class="btn btn-secondary select-trigger-confirm mt-2">
+                <button class="btn btn-primary select-trigger-confirm mt-2">
                     {{ trans('messages.automation.trigger.select_confirm') }}
                 </button>
             </form>

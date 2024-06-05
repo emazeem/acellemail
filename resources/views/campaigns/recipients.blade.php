@@ -65,7 +65,7 @@
             <br />
             <a
                 sample-url="{{ action('CampaignController@listSegmentForm', $campaign->uid) }}"
-                href="#add_condition" class="btn btn-secondary add-form">
+                href="#add_condition" class="btn btn-primary add-form">
                 <span class="material-symbols-rounded">add</span> {{ trans('messages.add_list_segment') }}
             </a>
         </div>
@@ -73,7 +73,7 @@
         <hr>
 
         <div class="text-end">
-            <button class="btn btn-secondary">{{ trans('messages.save_and_next') }} <span class="material-symbols-rounded">arrow_forward</span> </button>
+            <button class="btn btn-primary">{{ trans('messages.save_and_next') }} <span class="material-symbols-rounded">arrow_forward</span> </button>
         </div>
     <form>
 

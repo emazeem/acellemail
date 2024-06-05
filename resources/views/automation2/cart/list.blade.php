@@ -15,7 +15,7 @@
                 <br>Acelle will shoot a notification after <strong class="font-weight-semibold">12 hours</strong></p>
         </div>
         <div class="ml-auto pl-4">
-            <button class="btn btn-secondary" onclick="timelinePopup.load()">Refresh</button>
+            <button class="btn btn-primary" onclick="timelinePopup.load()">Refresh</button>
         </div>
     </div>
 

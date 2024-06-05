@@ -84,7 +84,7 @@
                                     ])
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-secondary add-country-tax px-3">{{ trans('messages.tax.country.add') }}</button>
+                                    <button type="button" class="btn btn-primary add-country-tax px-3">{{ trans('messages.tax.country.add') }}</button>
                                 </div>
                             </div>
 

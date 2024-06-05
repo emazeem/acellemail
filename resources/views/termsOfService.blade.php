@@ -9,6 +9,6 @@
     <hr>
 
     <div class="text-center">
-        <button class="btn btn-secondary px-4 close">{{ trans('messages.tos.i_agree') }}</button>
+        <button class="btn btn-primary px-4 close">{{ trans('messages.tos.i_agree') }}</button>
     </div>
 @endsection

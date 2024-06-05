@@ -76,7 +76,7 @@
 
         <hr>
         <div class="text-end">
-            <button class="btn btn-secondary">{{ trans('messages.save_and_next') }} <span class="material-symbols-rounded">arrow_forward</span> </button>
+            <button class="btn btn-primary">{{ trans('messages.save_and_next') }} <span class="material-symbols-rounded">arrow_forward</span> </button>
         </div>
     <form>
 @endsection

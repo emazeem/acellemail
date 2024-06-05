@@ -38,7 +38,7 @@
                         ])
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-secondary text-nowrap">{{ trans('messages.language.load_translate') }}</button>
+                        <button type="submit" class="btn btn-primary text-nowrap">{{ trans('messages.language.load_translate') }}</button>
                     </div>
                 </div>
             </form>

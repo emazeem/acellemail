@@ -63,7 +63,7 @@
 
 				<td class="text-end text-nowrap pe-0">
 					@if (\Gate::allows('update', $item))
-						<a href="{{ action('SubscriberController@edit', ['list_uid' => $list->uid, "uid" => $item->uid]) }}" role="button" class="btn btn-secondary btn-icon">
+						<a href="{{ action('SubscriberController@edit', ['list_uid' => $list->uid, "uid" => $item->uid]) }}" role="button" class="btn btn-primary btn-icon">
 							<span class="material-symbols-rounded">edit</span>
 						</a>
 					@endif

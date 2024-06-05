@@ -65,7 +65,7 @@
         </div>
     </div>
     
-    <button class="btn btn-secondary mt-20">{{ trans('messages.automation.settings.save') }}</button>            
+    <button class="btn btn-primary mt-20">{{ trans('messages.automation.settings.save') }}</button>
 </form>
 
 <div class="mt-4 d-flex py-3">
@@ -79,7 +79,7 @@
         <div class="mt-3">
             <a href="{{ action('Automation2Controller@delete', ['uids' => $automation->uid]) }}"
                 data-confirm="{{ trans('messages.automation.delete.confirm') }}"
-                class="btn btn-secondary automation-delete"
+                class="btn btn-primary automation-delete"
             >
                 <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.delete_automation') }}
             </a>

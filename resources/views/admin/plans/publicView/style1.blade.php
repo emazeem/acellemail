@@ -3,7 +3,7 @@
     <div class="col-md-4">
         <div class="text-end">
             <div class="dropdown d-inline-block">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ trans('messages.plan.style_1') }}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

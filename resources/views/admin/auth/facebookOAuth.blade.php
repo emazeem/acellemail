@@ -76,7 +76,7 @@
         </div>
 
         <div class="text-left">
-            <button class="btn btn-secondary mr-1"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
+            <button class="btn btn-primary mr-1"><i class="icon-check"></i> {{ trans('messages.save') }}</button>
             <a href="{{ action('Admin\AuthController@index') }}" class="btn btn-light">{{ trans('messages.cancel') }}</a>
         </div>
     </form>

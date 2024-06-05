@@ -6,11 +6,9 @@
     
     <form enctype="multipart/form-data" action="{{ action('UserController@register') }}" method="POST" class="form-validate-jqueryz subscription-form">
         {{ csrf_field() }}
-
         <input type="hidden" name="plan_uid" value="{{ request()->plan_uid }}" />
-
         <div class="row mc-form d-flex justify-content-center">
-            <div class="col-md-6 bg-white p-md-5" style="border-radius: 25px;">
+            <div class="bg-white p-md-5 col-md-6" style="border-radius: 25px;">
                 <div class="col-md-12 text-center">
                     <img src="{{url('images/logo.png')}}" alt="" class="img-fluid w-50 py-4">
                 </div>
@@ -141,7 +139,6 @@
                         
                 </div>
             </div>
-            <div class="col-md-1"></div>
         </div>
     </form>
 
@@ -154,5 +151,25 @@
             });
         @endif
     </script>
+    <style>
+        .mc-form .select2-selection--single:not([class*=bg-]):not([class*=border-]){
+            background: white!important;
+            border-color: #bbb;
+            border-radius: 2px;
+            border: solid 1px #bbb;
+            box-shadow: none;
+        }
+        .mc-form .select2-selection--single .select2-selection__rendered{
+            color: black!important;
+        }
+        .mc-form .select2{
+            border: none;
+        }
+        .btn-primary{
+            background: -webkit-repeating-linear-gradient(darkblue, black) !important;
+            border-color: #02026e !important;
+            border-radius: 8px;
+        }
+    </style>
     
 @endsection

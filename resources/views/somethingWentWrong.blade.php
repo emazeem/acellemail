@@ -9,8 +9,8 @@
         </span>
     </div>
     @if (isset($redirect_url))
-        <a href='{{ $redirect_url }}' onclick='history.back();return false;' class='btn btn-secondary'>{{ trans('messages.go_back') }}</a>
+        <a href='{{ $redirect_url }}' onclick='history.back();return false;' class='btn btn-primary'>{{ trans('messages.go_back') }}</a>
     @else
-        <a href='#back' onclick='history.back();return false;' class='btn btn-secondary'>{{ trans('messages.go_back') }}</a>
+        <a href='#back' onclick='history.back();return false;' class='btn btn-primary'>{{ trans('messages.go_back') }}</a>
     @endif
 @endsection

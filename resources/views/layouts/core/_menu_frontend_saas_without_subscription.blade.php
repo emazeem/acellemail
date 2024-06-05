@@ -2,20 +2,27 @@
 
 <nav class="navbar navbar-expand-xl navbar-dark fixed-top navbar-main frontend py-0">
     <div class="container-fluid ms-0">
-        <a class="navbar-brand d-flex align-items-center me-2" href="{{ action('HomeController@index') }}">
-            @if (getLogoMode(Auth::user()->customer->theme_mode, Auth::user()->customer->getColorScheme(), request()->session()->get('customer-auto-theme-mode')) == 'dark')
-                <img class="logo" src="{{ getSiteLogoUrl('dark') }}" data-dark="{{ getSiteLogoUrl('dark') }}" data-light="{{ getSiteLogoUrl('light') }}" />
-            @else
-                <img class="logo" src="{{ getSiteLogoUrl('light') }}" data-dark="{{ getSiteLogoUrl('dark') }}" data-light="{{ getSiteLogoUrl('light') }}" />
-            @endif
-        </a>
-        <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#mainAppNav" aria-controls="mainAppNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="logo-div" >
+            <a class="navbar-brand d-flex align-items-center me-2" href="{{ action('HomeController@index') }}">
+                {{--@if (getLogoMode(Auth::user()->customer->theme_mode, Auth::user()->customer->getColorScheme(), request()->session()->get('customer-auto-theme-mode')) == 'dark')
+                    <img class="logo" src="{{ getSiteLogoUrl('dark') }}" data-dark="{{ getSiteLogoUrl('dark') }}" data-light="{{ getSiteLogoUrl('light') }}" />
+                @else
+                    <img class="logo" src="{{ getSiteLogoUrl('light') }}" data-dark="{{ getSiteLogoUrl('dark') }}" data-light="{{ getSiteLogoUrl('light') }}" />
+                @endif--}}
+                @if (getLogoMode(Auth::user()->customer->theme_mode, Auth::user()->customer->getColorScheme(), request()->session()->get('customer-auto-theme-mode')) == 'dark')
+                    <img class="logo" src="{{url('images/logo.png')}}" data-dark="{{url('images/logo.png')}}" data-light="{{url('images/logo.png')}}" />
+                @else
+                    <img class="logo" src="{{url('images/logo.png')}}" data-dark="{{url('images/logo.png')}}" data-light="{{url('images/logo.png')}}" />
+                @endif
+            </a>
+            <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#mainAppNav" aria-controls="mainAppNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <span middle-bar-control="element" class="leftbar-hide-menu middle-bar-element">
-            <svg class="SideBurgerIcon-image" viewBox="0 0 50 32"><path d="M49,4H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,4,49,4z"></path><path d="M49,16H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,16,49,16z"></path><path d="M49,28H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,28,49,28z"></path><path d="M8.1,22.8c-0.3,0-0.5-0.1-0.7-0.3L0.7,15l6.7-7.8c0.4-0.4,1-0.5,1.4-0.1c0.4,0.4,0.5,1,0.1,1.4L3.3,15l5.5,6.2   c0.4,0.4,0.3,1-0.1,1.4C8.6,22.7,8.4,22.8,8.1,22.8z"></path></svg>
-        </span>
+            <span middle-bar-control="element" class="leftbar-hide-menu middle-bar-element">
+                <svg class="SideBurgerIcon-image" viewBox="0 0 50 32"><path d="M49,4H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,4,49,4z"></path><path d="M49,16H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,16,49,16z"></path><path d="M49,28H19c-0.6,0-1-0.4-1-1s0.4-1,1-1h30c0.6,0,1,0.4,1,1S49.6,28,49,28z"></path><path d="M8.1,22.8c-0.3,0-0.5-0.1-0.7-0.3L0.7,15l6.7-7.8c0.4-0.4,1-0.5,1.4-0.1c0.4,0.4,0.5,1,0.1,1.4L3.3,15l5.5,6.2   c0.4,0.4,0.3,1-0.1,1.4C8.6,22.7,8.4,22.8,8.1,22.8z"></path></svg>
+            </span>
+        </div>
 
         <div class="collapse navbar-collapse" id="mainAppNav">
             <ul class="navbar-nav me-auto mb-md-0 main-menu">
@@ -35,7 +42,7 @@
                         <span>{{ trans('messages.my_profile') }}</span>
                     </a>
                 </li>
-                
+
                 <li class="nav-item {{ $menu == 'contact' ? 'active' : '' }}">
                     <a title="{{ trans('messages.contact_information') }}" href="{{ action("AccountController@contact") }}" class="leftbar-tooltip nav-link d-flex align-items-center py-3 lvl-1">
                         <i class="navbar-icon">
@@ -62,7 +69,7 @@
                         <span>{{ trans('messages.subscription') }}</span>
                     </a>
                 </li>
-                
+
                 <li class="nav-item {{ $menu == 'log' ? 'active' : '' }}">
                     <a title="{{ trans('messages.billing') }}" href="{{ action("AccountController@logs") }}" class="leftbar-tooltip nav-link d-flex align-items-center py-3 lvl-1">
                         <i class="navbar-icon">

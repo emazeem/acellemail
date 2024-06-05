@@ -24,10 +24,10 @@
 
         
         @if ($form->getMetadata('website_uid'))
-            <button type="button" class="btn btn-secondary connect-site">{{ trans('messages.form.connect') }}</button>
+            <button type="button" class="btn btn-primary connect-site">{{ trans('messages.form.connect') }}</button>
             <button type="button" class="btn btn-default remove-site">{{ trans('messages.form.remove_site') }}</button>
         @else
-            <button type="button" class="btn btn-secondary connect-site">{{ trans('messages.form.connect') }}</button>
+            <button type="button" class="btn btn-primary connect-site">{{ trans('messages.form.connect') }}</button>
         @endif
             <a target="_blank" href="{{ action('WebsiteController@index') }}" class="ms-1 btn btn-link">
                 {{ trans('messages.sites_management') }}

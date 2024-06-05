@@ -59,7 +59,7 @@
 					</div>
 				</td>
 				<td colspan="3">
-					<a href="#add_more" class="btn btn-secondary add_label_value_group">{{ trans('messages.add_more') }}</a>
+					<a href="#add_more" class="btn btn-primary add_label_value_group">{{ trans('messages.add_more') }}</a>
 				</td>
 			</tr>
 		@endif

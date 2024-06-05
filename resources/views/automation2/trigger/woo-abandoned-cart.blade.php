@@ -101,7 +101,7 @@
                 </div>
                 <div class="ml-auto">
                     <a href="{{ action('Automation2Controller@cartChangeStore', $automation->uid) }}"
-                        class="btn btn-secondary change-connect-url text-nowrap"
+                        class="btn btn-primary change-connect-url text-nowrap"
                         {{-- onclick="$('.edit-connect-url').removeClass('hide');$('.wp-shop-info').hide();$('.trigger-save-change').show()" --}}
                     >
                         {{ trans('messages.automation.connect_url.change_store') }}

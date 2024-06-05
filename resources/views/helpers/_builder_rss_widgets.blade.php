@@ -26,7 +26,7 @@
                     <div class="container">
                         <div class="rss-placeholder">
                             <img src="{{ url('images/rss-placeholder.svg') }}" width="100%" />
-                            <button class="btn btn-secondary toggle shadown-sm" style="display:none">{{ trans('messages.rss.preview') }}</button>
+                            <button class="btn btn-primary toggle shadown-sm" style="display:none">{{ trans('messages.rss.preview') }}</button>
                         </div>
                     </div>
                 </div>

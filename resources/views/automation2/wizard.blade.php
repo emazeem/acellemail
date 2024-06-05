@@ -42,7 +42,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <button class="btn btn-secondary mt-20">{{ trans('messages.automation.get_started') }}</button>
+                    <button class="btn btn-primary mt-20">{{ trans('messages.automation.get_started') }}</button>
                 </div>
                     
             </form>

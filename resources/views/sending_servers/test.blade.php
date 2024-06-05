@@ -65,7 +65,7 @@
             <button type="submit"
                 href="javascript:;"
                 role="button"
-                class="btn btn-secondary me-1"
+                class="btn btn-primary me-1"
             >
                 {{ trans('messages.send') }}
             </button>

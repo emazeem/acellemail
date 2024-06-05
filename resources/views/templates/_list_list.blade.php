@@ -54,7 +54,7 @@
                             </a>
                         @endif
                         @if (in_array(Acelle\Model\Setting::get('builder'), ['both','classic']))
-                            <a href="{{ action('TemplateController@edit', $template->uid) }}" role="button" class="btn btn-secondary btn-icon template-compose-classic">
+                            <a href="{{ action('TemplateController@edit', $template->uid) }}" role="button" class="btn btn-primary btn-icon template-compose-classic">
                                 {{ trans('messages.template.classic_builder') }}
                             </a>
                         @endif

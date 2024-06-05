@@ -24,7 +24,7 @@
                             </div>
                             <div class="list-action">
                                 <button
-                                    class="btn btn-secondary"
+                                    class="btn btn-primary"
                                 >
                                     {{ trans('messages.automation.template.start') }}
                                 </button>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="list-action">
                                 <button
-                                    class="btn btn-secondary template-start"
+                                    class="btn btn-primary template-start"
                                 >
                                     {{ trans('messages.automation.template.start') }}
                                 </button>

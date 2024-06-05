@@ -41,7 +41,7 @@
         @endif
 
         <div class="mt-2">
-            <button type="submit" class="btn btn-secondary test-webhook-save">{{ trans('messages.webhook.test') }}</button>
+            <button type="submit" class="btn btn-primary test-webhook-save">{{ trans('messages.webhook.test') }}</button>
             <a class="btn btn-light ms-1 edit-webhook2"
                 href="{{ action('Automation2Controller@webhooksEdit', [
                     'webhook_uid' => $webhook->uid,

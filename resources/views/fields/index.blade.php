@@ -125,7 +125,7 @@
 								</div>
 							</td>
 							<td colspan="3">
-								<a href="#add_more" class="btn btn-secondary add_label_value_group">{{ trans('messages.add_more') }}</a>
+								<a href="#add_more" class="btn btn-primary add_label_value_group">{{ trans('messages.add_more') }}</a>
 							</td>
 						</tr>
 					@endif
@@ -154,7 +154,7 @@
 
 		<hr /><br />
 		<div class="">
-			<button class="btn btn-secondary me-2"><i class="icon-check"></i> {{ trans('messages.save_change') }}</button>
+			<button class="btn btn-primary me-2"><i class="icon-check"></i> {{ trans('messages.save_change') }}</button>
 		</div>
 	</form>
 

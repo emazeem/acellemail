@@ -52,7 +52,7 @@
                           
                                 <a  href="{{ action('Sms\SmsTemplateController@index', [
                                         'page' => request()->page,
-                                    ]) }}" class="btn btn-secondary me-1">
+                                    ]) }}" class="btn btn-primary me-1">
                                         Return Back
                                 </a> 
 

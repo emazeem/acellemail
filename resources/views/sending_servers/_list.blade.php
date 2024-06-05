@@ -52,7 +52,7 @@
                         @endif
                         <br />
                         <span class="text-muted">{{ trans('messages.type') }}</span>
-                        
+
                     </div>
                 </td>
                 <td>
@@ -91,9 +91,9 @@
                 <td class="text-end text-nowrap pe-0">
                     @if (Auth::user()->customer->can('update', $item))
                         @if ($server->isExtended())
-                            <a href="{{ $server->getEditUrl() }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-secondary btn-icon"><span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
+                            <a href="{{ $server->getEditUrl() }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-primary btn-icon"><span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
                         @else
-                            <a href="{{ action('SendingServerController@edit', ["id" => $item->uid, "type" => $item->type]) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-secondary btn-icon"><span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
+                            <a href="{{ action('SendingServerController@edit', ["id" => $item->uid, "type" => $item->type]) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-primary btn-icon"><span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}</a>
                         @endif
                     @endif
                     @if (Auth::user()->customer->can('delete', $item) || Auth::user()->customer->can('disable', $item) || Auth::user()->customer->can('enable', $item))
@@ -129,7 +129,7 @@
         @endforeach
     </table>
     @include('elements/_per_page_select')
-    
+
 @elseif (!empty(request()->keyword) || !empty(request()->filters["type"]))
     <div class="empty-list">
         <span class="material-symbols-rounded">dns</span>

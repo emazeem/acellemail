@@ -1,6 +1,6 @@
 @php $menu = $menu ?? false @endphp
 
-<div class="row">
+<div class="row px-0">
     <div class="col-md-12">
         <div class="tabbable pb-2">
             <ul class="nav nav-tabs nav-tabs-top nav-underline mb-4">

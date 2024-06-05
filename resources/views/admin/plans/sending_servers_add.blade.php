@@ -26,7 +26,7 @@
             ])
           </div>
           <div class="mt-4">
-            <button type="submit" class="btn btn-secondary">{{ trans('messages.plan.sending_servers.add.ok') }}</button>
+            <button type="submit" class="btn btn-primary">{{ trans('messages.plan.sending_servers.add.ok') }}</button>
             <button role="button" class="btn btn-link" data-dismiss="modal">{{ trans('messages.close') }}</button>
           </div>
       @else

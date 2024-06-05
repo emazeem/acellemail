@@ -46,7 +46,7 @@
 				</td>
 				<td class="text-end text-nowrap pe-0" width="5%">
 					@can('update', $item)
-						<a href="{{ action('Admin\CurrencyController@edit', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-secondary btn-icon"><span class="material-symbols-rounded">edit</span></a>
+						<a href="{{ action('Admin\CurrencyController@edit', $item->uid) }}" data-popup="tooltip" title="{{ trans('messages.edit') }}" role="button" class="btn btn-primary btn-icon"><span class="material-symbols-rounded">edit</span></a>
 					@endcan
 					@if (Auth::user()->can('delete', $item) || Auth::user()->can('enable', $item) || Auth::user()->can('disable', $item) || Auth::user()->can('delete', $item))
 						<div class="btn-group">

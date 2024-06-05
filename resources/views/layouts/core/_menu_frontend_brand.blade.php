@@ -189,7 +189,7 @@
             <div class="navbar-right">
                 <ul class="navbar-nav me-auto mb-md-0">
                     @include('layouts.core._top_activity_log')
-                    
+
                     @include('layouts.core._menu_frontend_user')
                 </ul>
             </div>
@@ -240,5 +240,5 @@
                 MenuFrontend.saveLeftbarState('open');
             }
         });
-    });        
+    });
 </script>

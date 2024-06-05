@@ -460,6 +460,11 @@ function format_price($price, $format = '{PRICE}', $html = false)
         return str_replace('{PRICE}', number_with_delimiter($price), $format);
     }
 }
+function format_price_without_usd($price, $format = '{PRICE}', $html = false)
+{
+    return str_replace('{PRICE}', number_with_delimiter($price), $format);
+
+}
 
 /**
  * Check if the app is initiated.

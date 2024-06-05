@@ -48,7 +48,7 @@
             </div>
             @can('create', new Acelle\Model\AdminGroup())
                 <div class="text-end">
-                    <a href="{{ action("Admin\AdminGroupController@create") }}" role="button" class="btn btn-secondary">
+                    <a href="{{ action("Admin\AdminGroupController@create") }}" role="button" class="btn btn-primary">
                         <span class="material-symbols-rounded">add</span> {{ trans('messages.create_admin_group') }}
                     </a>
                 </div>

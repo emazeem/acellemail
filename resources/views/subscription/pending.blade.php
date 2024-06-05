@@ -38,7 +38,7 @@
                 <div class="mt-4">
                     <a onclick="addButtonMask($(this))" link-method="POST" href="{{ action('SubscriptionController@verifyPendingTransaction', [
                         'invoice_uid' => $invoice->uid,
-                    ]) }}" class="btn btn-secondary">
+                    ]) }}" class="btn btn-primary">
                         <span class="material-symbols-rounded me-1">restart_alt</span>
                         {{ trans('messages.subscription.verify_transaction') }}
                     </a>

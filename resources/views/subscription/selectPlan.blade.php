@@ -20,10 +20,12 @@
 @endsection
 
 @section('content')    
-    <div class="container mt-4 mb-5">
+    <div class="container-fluid mt-4 mb-5">
         <div class="row">
-            <div class="col-md-10">
-                <h2 class="mb-4">{{ trans('messages.subscription.choose_a_plan') }}</h2>
+            <div class="col-md-12">
+                <h2 class="mb-4 text-center">{{ trans('messages.subscription.choose_a_plan') }}</h2>
+                <p class="text-center">{{ trans('messages.select_plan.wording') }}</p>
+
                 @if ($getLastCancelledOrEndedGeneralSubscription)
                     @include('elements._notification', [
                         'level' => 'warning',
@@ -39,8 +41,7 @@
                     'message' => trans('messages.no_plan.title')
                 ])
     
-                <p>{{ trans('messages.select_plan.wording') }}</p>
-                
+
                 @if (empty($plans))
                     <div class="row">
                         <div class="col-md-6">
@@ -51,70 +52,69 @@
                         </div>
                     </div>
                 @else
-                    <div class="new-price-box" style="margin-right: -30px">
-                        <div class="row" style="padding-left:20px;padding-right:20px;">
-
+                    <div class="container-fluid px-md-5">
+                        <div class="row">
                             @foreach ($plans as $key => $plan)
-                                <div
-                                    class="new-price-item mb-3 d-inline-block plan-item select-plan-item"
-                                    style="">
-                                    <div style="height: 100px">
-                                        <div class="price">
-                                            {!! format_price($plan->price, $plan->currency->format, true) !!}
-                                            <span class="p-currency-code">{{ $plan->currency->code }}</span>
+                                <div class="col-md-3" style="">
+                                    <div class="border bg-white" style="box-shadow: 0px 0px 6px 0px #006FFF59;box-shadow: 0px 4px 4px 0px #0860D226;border-radius: 15px">
+                                        <div class="p-3 position-relative">
+                                            <img src="{{url('images/subscription.png')}}" alt="" class="img-fluid" style="object-fit: fill;height: 150px;width: 100%;box-shadow: 0px 0px 4px 0px #3531E840;border-radius: 15px">
+                                            <label class="plan-title fs-5 fw-600 mt-0 position-absolute" style="top: 30px;left: 30px">{{ $plan->name }}</label>
                                         </div>
-                                        <p><span class="material-symbols-rounded text-muted2">restore</span> {{ $plan->displayFrequencyTime() }}</p>
-                                    </div>
-                                    <hr class="mb-2" style="width: 40px">
-                                    <div style="height: 40px">
-                                        <label class="plan-title fs-5 fw-600 mt-0">{{ $plan->name }}</label>
-                                    </div>
-
-                                    <div style="height: 130px">
-                                        <p class="mt-4">{{ $plan->description }}</p>
-                                    </div>
-
-                                    <span class="time-box d-block text-center small py-2 fw-600 mb-5">
-                                        <div class="mb-1">
-                                            <span>{{ $plan->displayTotalQuota() }} {{ trans('messages.sending_total_quota_label') }}</span>
-                                        </div>
-                                        <div>
-                                            <span>{{ $plan->displayMaxSubscriber() }} {{ trans('messages.contacts') }}</span>
-                                        </div>
-                                    </span>
-
-                                    <div>
-                                        <div style="vertical-align:bottom">
-                                            <a
-                                                link-method="POST"
-                                                href="{{ action('SubscriptionController@assignPlan', [
-                                                    'plan_uid' => $plan->uid,
-                                                ]) }}"
-                                                class="btn fw-600 btn-primary rounded-3 d-block py-2 shadow-sm">
-                                                    @if ($plan->isFree() || $plan->hasTrial())
-                                                        {{ trans('messages.plan.select') }}
-                                                    @else
-                                                        {{ trans('messages.plan.buy') }}
-                                                    @endif
-                                            </a>
-                                            @if ($plan->hasTrial())
-                                                <p
-                                                    link-method="POST"
-                                                    href="{{ action('SubscriptionController@assignPlan', [
-                                                        'plan_uid' => $plan->uid,
-                                                    ]) }}"
-                                                    class="mt-3 fw-600 mb-0 text-center">
+                                        <div class="p-3 subscription-div">
+                                            <div>
+                                                <p class="mt-0">{{ $plan->description }}</p>
+                                            </div>
+                                            <div  class="text-center">
+                                                <div class="price col-md-12 text-center justify-content-center">
+                                                    <h5 style="color: blue;font-weight: bolder!important;">$</h5>
+                                                    <h1 style="font-weight: bolder!important;font-size: 40px">{!! number_format($plan->price) !!}</h1>
+                                                    <h4 class="p-currency-code " style="font-weight: bolder!important;color: grey">{{ $plan->currency->code }}</h4>
+                                                </div>
+                                                <h4 class="text-primary mt-0" style="font-weight: bolder!important;">
+                                                    {{ $plan->displayFrequencyTime() }}
+                                                </h4>
+                                                @if ($plan->hasTrial())
+                                                    <p
+                                                            link-method="POST"
+                                                            href="{{ action('SubscriptionController@assignPlan', [
+                                                            'plan_uid' => $plan->uid,
+                                                        ]) }}"
+                                                            class="mt-0 pt-0 fw-300 mb-0 text-center">
                                                         {{ trans('messages.plan.has_trial', [
                                                             'time' => $plan->getTrialPeriodTimePhrase(),
                                                         ]) }}
-                                                </p>
-                                            @endif
+                                                    </p>
+                                                @endif
+                                            </div>
+
+                                            <div>
+                                                <div style="vertical-align:bottom">
+                                                    <span class="time-box d-block text-left small py-2 fw-600 mt-5">
+                                                        <div class="mb-1">
+                                                            <span> <input type="checkbox" checked > {{ $plan->displayTotalQuota() }} {{ trans('messages.sending_total_quota_label') }}</span>
+                                                        </div>
+                                                        <div>
+                                                            <span> <input type="checkbox" checked > {{ $plan->displayMaxSubscriber() }} {{ trans('messages.contacts') }}</span>
+                                                        </div>
+                                                    </span>
+
+                                                        <a link-method="POST" href="{{ action('SubscriptionController@assignPlan', ['plan_uid' => $plan->uid]) }}" class="btn fw-600 btn-primary rounded-5 d-block py-2 shadow-sm">
+                                                            @if ($plan->isFree() || $plan->hasTrial())
+                                                                {{ trans('messages.plan.select') }}
+                                                            @else
+                                                                {{ trans('messages.plan.buy') }}
+                                                            @endif
+                                                        </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
 
                         </div>
+
                     </div>
                 @endif
             </div>
@@ -148,4 +148,9 @@
             });
         });
     </script>
+    <style>
+        .subscription-div .price{
+            display: flex;
+        }
+    </style>
 @endsection

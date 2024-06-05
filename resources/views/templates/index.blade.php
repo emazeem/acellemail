@@ -22,9 +22,9 @@
                     'from' => 'mine',
                     'view' => 'list',
                 ]) }}"
-                    class="btn btn-light px-3 py-2 fw-600 {{ request()->from != 'gallery' ? 'focus' : '' }}"
+                    class="btn btn-primary px-3 py-2 fw-600 text-white {{ request()->from != 'gallery' ? 'focus' : '' }}"
                 >
-                    <span class="material-symbols-rounded me-1">portrait</span>
+                    <span class="material-symbols-rounded me-1 text-white">portrait</span>
                     {{ trans('messages.my_templates') }}
                 </a>
             
@@ -32,7 +32,7 @@
                     'from' => 'gallery',
                     'view' => 'grid',
                 ]) }}"
-                    class="btn btn-light px-3 py-2 fw-600 {{ request()->from == 'gallery' ? 'focus' : '' }}"
+                    class="btn btn-primary px-3 py-2 fw-600 {{ request()->from == 'gallery' ? 'focus' : '' }}"
                 >
                     <span class="material-symbols-rounded me-1">collections</span>
                     {{ trans('messages.base_template_gallery') }}
@@ -60,7 +60,7 @@
                             </label>
                         </div>
                         <div class="dropdown list_actions" style="display: none">
-                            <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -124,10 +124,10 @@
                 </div>
 
                 <div>
-                    <a href="{{ action('TemplateController@uploadTemplate') }}" class="btn btn-light ml-auto">
+                    <a href="{{ action('TemplateController@uploadTemplate') }}" class="btn btn-primary ml-auto">
                         <span class="material-symbols-rounded">file_upload</span> {{ trans('messages.upload') }}
                     </a>  
-                    <a href="{{ action('TemplateController@builderCreate') }}" class="btn btn-secondary">
+                    <a href="{{ action('TemplateController@builderCreate') }}" class="btn btn-primary">
                         <span class="material-symbols-rounded">add</span> {{ trans('messages.create') }}
                     </a>
                                       

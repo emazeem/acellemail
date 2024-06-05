@@ -57,7 +57,7 @@
                     </div>
                     
                     <div class="text-left">
-                        <button class="btn btn-secondary me-2"><i class="icon-check"></i> {{ trans('messages.export') }}</button>
+                        <button class="btn btn-primary me-2"><i class="icon-check"></i> {{ trans('messages.export') }}</button>
                     </div>
                     <br />
                 </div>
@@ -80,17 +80,17 @@
 
                     </div>
                     <label style="margin-bottom:20px;font-style:italic;" id="bottomNotice"></label>
-                    <a id="cancelBtn" class="btn btn-secondary btn-icon cancel processing">
+                    <a id="cancelBtn" class="btn btn-primary btn-icon cancel processing">
                         {{ trans('messages.cancel') }}
                     </a>
                 </div>
 
                 <div class="form-group finish hide">
                     <div class="text-left">
-                        <a id="downloadBtn" target="_blank" href="#" role="button" class="btn btn-secondary success">
+                        <a id="downloadBtn" target="_blank" href="#" role="button" class="btn btn-primary success">
                             <span class="material-symbols-rounded">file_download</span> {{ trans('messages.download_export') }}
                         </a>
-                        <a href="#retry" class="btn btn-secondary me-1 retry"><span class="material-symbols-rounded">restart_alt</span> {{ trans('messages.retry') }}</a>
+                        <a href="#retry" class="btn btn-primary me-1 retry"><span class="material-symbols-rounded">restart_alt</span> {{ trans('messages.retry') }}</a>
                     </div>
                 </div>
             </form>

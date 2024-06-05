@@ -42,7 +42,7 @@
                 </div>
             </div>
             <hr>
-            <button class="btn btn-secondary me-2">{{ trans('messages.sending_limit.save') }}</button>
+            <button class="btn btn-primary me-2">{{ trans('messages.sending_limit.save') }}</button>
             <a href="javascript:;" class="btn btn-link me-2" data-dismiss="modal">{{ trans('messages.sending_limit.close') }}</a>
         </form>
     </div>

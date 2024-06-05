@@ -60,7 +60,7 @@
                             </p> 
                         </div>
 
-                        <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                        <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                     </li>
                 @endif
                 <li class="d-flex align-items-center">
@@ -81,7 +81,7 @@
                         </p>
                     </div>
 
-                    <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                    <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                 </li>
 
                 <li class="d-flex align-items-center">
@@ -95,7 +95,7 @@
                         </p>    
                     </div>
 
-                    <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                    <a href="{{ action('CampaignController@recipients', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                 </li>
 
                 <li class="d-flex align-items-center">
@@ -109,7 +109,7 @@
                         </p>   
                     </div>
 
-                    <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                    <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                 </li>
 
                 <li class="d-flex align-items-center">
@@ -128,7 +128,7 @@
                         </p>
                     </div>
 
-                    <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                    <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                 </li>
 
                 <li class="d-flex align-items-center confirm-webhooks-summary">
@@ -145,7 +145,7 @@
                         </p>
                     </div>
 
-                    <a href="javascript:;" class="btn btn-secondary manage_webhooks_but">{{ trans('messages.webhooks.manage') }}</a>
+                    <a href="javascript:;" class="btn btn-primary manage_webhooks_but">{{ trans('messages.webhooks.manage') }}</a>
 
                     <script>
                         $(function() {
@@ -171,7 +171,7 @@
                             </p>
                         </div>
 
-                        <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                        <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                     </li>
                 @else
                     <li class="d-flex align-items-center">
@@ -185,7 +185,7 @@
                             </p>
                         </div>
 
-                        <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-secondary">{{ trans('messages.edit') }}</a>
+                        <a href="{{ action('CampaignController@setup', $campaign->uid) }}" class="btn btn-primary">{{ trans('messages.edit') }}</a>
                     </li>
                 @endif
             </ul>
@@ -200,10 +200,10 @@
                         <div class="text-end">
                             <span
                                 onclick="popupwindow('{{ action('CampaignController@preview', $campaign->uid) }}', `{{ $campaign->name }}`, 800)"
-                                href="#preview" class="btn btn-secondary me-1" data-uid="{{ $campaign->uid }}">
+                                href="#preview" class="btn btn-primary me-1" data-uid="{{ $campaign->uid }}">
                                 {{ trans('messages.preview') }} <span class="material-symbols-rounded">visibility</span>
                             </span>
-                            <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif class="btn btn-secondary me-1 send-a-test-email-link" data-uid="{{ $campaign->uid }}">{{ trans('messages.send_a_test_email') }} <i class="icon-envelop3 ml-5"></i> </button>
+                            <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif class="btn btn-primary me-1 send-a-test-email-link" data-uid="{{ $campaign->uid }}">{{ trans('messages.send_a_test_email') }} <i class="icon-envelop3 ml-5"></i> </button>
                             @if (!is_null($score))
                                 <span @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif onclick="$('#spam_score_confirm_model').modal('show')" class="btn btn-primary">{{ trans('messages.send') }} <i class="icon-paperplane ml-5"></i> </span>
                                 <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif style="display: none" class="btn btn-primary send-campaign-button">{{ trans('messages.send') }} <i class="icon-paperplane ml-5"></i> </button>
@@ -228,7 +228,7 @@
 
                                         <div class="modal-footer">
                                             <button role="button" class="btn btn-link" data-dismiss="modal">{{ trans('messages.cancel') }}</button>
-                                            <a class="btn btn-secondary link-confirm-button" onclick="$('.send-campaign-button').click()">{{ trans('messages.confirm') }}</a>
+                                            <a class="btn btn-primary link-confirm-button" onclick="$('.send-campaign-button').click()">{{ trans('messages.confirm') }}</a>
                                         </div>
                                     </form>
                                 </div>
@@ -247,10 +247,10 @@
                         </button>
                         <span
                             onclick="popupwindow('{{ action('CampaignController@preview', $campaign->uid) }}', `{{ $campaign->name }}`, 800)"
-                            href="#preview" class="btn btn-secondary me-1" data-uid="{{ $campaign->uid }}">
+                            href="#preview" class="btn btn-primary me-1" data-uid="{{ $campaign->uid }}">
                             {{ trans('messages.preview') }} <span class="material-symbols-rounded">visibility</span>
                         </span>
-                        <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif class="btn btn-secondary me-1 send-a-test-email-link" data-uid="{{ $campaign->uid }}">{{ trans('messages.send_a_test_email') }} <i class="icon-envelop3 ml-5"></i> </button>
+                        <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif class="btn btn-primary me-1 send-a-test-email-link" data-uid="{{ $campaign->uid }}">{{ trans('messages.send_a_test_email') }} <i class="icon-envelop3 ml-5"></i> </button>
                         <button @if(config('custom.japan') && !Acelle\Model\Setting::get('license')) license-required @endif class="btn btn-primary">{{ trans('messages.campaign.all_done') }} <i class="icon-paperplane ml-5"></i> </button>
                     </div>
                 @endif

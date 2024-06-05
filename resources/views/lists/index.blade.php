@@ -30,7 +30,7 @@
                         </div>
                         <div class="dropdown list_actions" style="display: none">
                             <button type="button"
-                                class="btn btn-secondary dropdown-toggle"
+                                class="btn btn-primary dropdown-toggle"
                                 data-bs-toggle="dropdown"
                             >
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
@@ -68,14 +68,14 @@
             </div>
             <div class="text-end">
                 @if (Auth::user()->customer->can('create', new Acelle\Model\MailList()))
-                    <a href="{{ action("MailListController@create") }}" role="button" class="btn btn-secondary">
+                    <a href="{{ action("MailListController@create") }}" role="button" class="btn btn-primary">
                         <span class="material-symbols-rounded">add</span> {{ trans('messages.create_list') }}
                     </a>
                 @endif
             </div>
         </div>
 
-        <div id="ListsIndexContent"></div>
+        <div id="ListsIndexContent" class="pml-table-container"></div>
     </div>
 
     <script>

@@ -28,7 +28,7 @@
                     <div class="filter-box">
                         <span class="me-2">@include('helpers.select_tool')</span>
                         <div class="dropdown list_actions me-3" style="display: none">
-                            <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -56,7 +56,7 @@
             <div class="">
                 @if (Auth::user()->admin->can('import', new Acelle\Model\Blacklist()))
                     <div class="text-end">
-                        <a href="{{ action('Admin\BlacklistController@import') }}" role="button" class="btn btn-secondary">
+                        <a href="{{ action('Admin\BlacklistController@import') }}" role="button" class="btn btn-primary">
                             <span class="material-symbols-rounded">file_upload</span> {{ trans('messages.blacklist.import') }}
                         </a>
                     </div>

@@ -40,7 +40,7 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="{{ $server['create_url'] }}" class="btn btn-secondary">{{ trans('messages.choose') }}</a>
+                                <a href="{{ $server['create_url'] }}" class="btn btn-primary">{{ trans('messages.choose') }}</a>
                             </div>
                         </div>
                     </li>                    
@@ -63,14 +63,14 @@
                                 </p>
                             </div>
                             <div>
-                                <a href="{{ action('Admin\SendingServerController@create', ["type" => $key]) }}" class="btn btn-secondary">{{ trans('messages.choose') }}</a>
+                                <a href="{{ action('Admin\SendingServerController@create', ["type" => $key]) }}" class="btn btn-primary">{{ trans('messages.choose') }}</a>
                             </div>
                         </div>
                     </li>
                 @endforeach
             </ul>
             <div class="">
-                <a href="{{ action('Admin\SendingServerController@index') }}" role="button" class="btn btn-secondary">
+                <a href="{{ action('Admin\SendingServerController@index') }}" role="button" class="btn btn-primary">
                     <i class="icon-cross2"></i> {{ trans('messages.cancel') }}
                 </a>
             </div>

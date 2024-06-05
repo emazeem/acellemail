@@ -142,7 +142,7 @@
                                     <div data-control="term" style="display:none">
                                         <textarea class="form-control term-editor" style="height:100px" name="options[term]">{!! $list->getEmbeddedFormOption('term') !!}</textarea>
                                         <div class="mt-2 text-end">
-                                            <button type="button" data-control="save-term" class="btn btn-secondary">{{ trans('messages.save') }}</button>
+                                            <button type="button" data-control="save-term" class="btn btn-primary">{{ trans('messages.save') }}</button>
                                         </div>
                                     </div>
                                 </div>

@@ -30,13 +30,13 @@
                         <span class="me-3">{{ Auth::user()->admin->displayName() }}</span>
                     </a>
                     <p class="mb-1 small text-muted">{{ Auth::user()->email }}</p>
-                    @if (Auth::user()->admin->status) 
+                    @if (Auth::user()->admin->status)
                         <span class="label label-flat bg-{{ Auth::user()->admin->status }}">{{ trans('messages.' . Auth::user()->admin->status) }}</span>
                     @endif
                 </div>
             </div>
         </li>
-        @if (isSiteDemo()) 
+        @if (isSiteDemo())
             <li>
                 <a href="{{ action("Controller@demo") }}" class="dropdown-item d-flex align-items-center border-bottom">
                     <i class="navbar-icon">

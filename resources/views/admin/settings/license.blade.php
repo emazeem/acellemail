@@ -87,7 +87,7 @@
                                         <p style="padding-left: 5px;padding-right: 40px">{{ $license->getLicenseNumber() }}{!! !$license->isActive() ? ' | <a href="'.$entitlementLink.'"><strong style="text-decoration: underline;">'.trans('messages.support.expired.note').'</strong></a>' : '' !!}</p>
                                     </div>
 
-                                    <a style="margin-left: auto" class="btn btn-secondary" href="{{ action('Admin\SettingController@licenseRemove') }}" link-confirm="{{ trans('messages.license.remove.confirm') }}" link-method="POST">
+                                    <a style="margin-left: auto" class="btn btn-primary" href="{{ action('Admin\SettingController@licenseRemove') }}" link-confirm="{{ trans('messages.license.remove.confirm') }}" link-method="POST">
                                         <i class="material-symbols-rounded">delete</i>
                                         {{ trans('messages.license.remove') }}
                                     </a>
@@ -127,9 +127,9 @@
                                     <br />
                                     <div class="text-left">
                                         @if ($license)
-                                            <button class="btn btn-secondary"><i class="icon-check"></i> {{ trans('messages.change_license') }}</button>
+                                            <button class="btn btn-primary"><i class="icon-check"></i> {{ trans('messages.change_license') }}</button>
                                         @else
-                                            <button class="btn btn-secondary"><i class="icon-check"></i> {{ trans('messages.verify_license') }}</button>
+                                            <button class="btn btn-primary"><i class="icon-check"></i> {{ trans('messages.verify_license') }}</button>
                                         @endif
                                     </div>
                                 </div>

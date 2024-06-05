@@ -73,7 +73,7 @@
                     'csv_link' => url('files/csv_import_example.csv')
                 ]) !!}</p>
 
-                <a mapping-action="upload" href="javascript:;" class="btn btn-mc_primary">
+                <a mapping-action="upload" href="javascript:;" class="btn btn-primary">
                     {{ trans('messages.subscriber.import.start') }}
                 </a>
             </div>

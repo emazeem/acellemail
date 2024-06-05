@@ -32,7 +32,7 @@
 
 								<a target="_blank" href="{{ get_permalink( $wooProduct->id ) }}" class="btn btn-light m-icon px-2 me-1 text-center copy-product-page-url xtooltip" title="Copy Product Page URL">
 									<span class="material-symbols-rounded">inventory_2</span></a>
-								<a href="{{ action('Site\ProductController@edit', $wooProduct->id) }}" role="button" class="btn btn-secondary px-2">
+								<a href="{{ action('Site\ProductController@edit', $wooProduct->id) }}" role="button" class="btn btn-primary px-2">
 									<span class="material-symbols-rounded">edit</span>
 								</a>
 								

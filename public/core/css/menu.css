@@ -13,6 +13,13 @@
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }
+.leftbar .logo-div{
+    padding-top: 14px;
+    padding-bottom: 1px;
+    margin-top: -10px;
+    box-shadow: 0px 2px 6px 0px #00000026;
+    background: white;
+}
 .leftbar:not(.leftbar-closed) .navbar-main:not(.navbar-right) ul.dropdown-menu:not(.top-user-menus) .nav-item.active a.dropdown-item {
     background-color: transparent;
 }
@@ -28,6 +35,9 @@
 }
 .leftbar-item {
     display: none;
+}
+.collapse.navbar-collapse#mainAppNav{
+    border-radius: 30px!important;
 }
 .leftbar-hide-menu {
     display: none;
@@ -90,7 +100,7 @@
         width: 230px;
         height: 100vh;
         display: block;
-        background: -webkit-repeating-linear-gradient(rgba(0, 25, 39, 0.85), black)!important;
+        /*background: -webkit-repeating-linear-gradient(darkblue, black)!important;*/
         transition: width 0.1s ease-in-out;
     }
     .leftbar-closed .navbar-main {
@@ -171,9 +181,16 @@
     .leftbar .leftbar-hide-menu:hover {
         opacity: 1;
     }
+    .state-open .leftbar-hide-menu svg {
+        fill: black;
+    }
+    .state-closed .leftbar-hide-menu svg {
+        fill: white;
+    }
+
     .leftbar-hide-menu svg {
-        fill: currentColor;
         width: 27px;
+        margin-top: 8px;
     }
     .leftbar .navbar-right {
         position: absolute;
@@ -522,4 +539,31 @@
 .leftbar .navbar-main:not(.navbar-right) .main-menu ul.dropdown-menu:not(.top-user-menus) .nav-item a.dropdown-item
 {
     background-color: transparent!important;
+}
+
+body.theme-default.mode-light .tabbable .nav.nav-tabs{
+    background: darkblue;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+body.theme-default.mode-light .tabbable .nav.nav-tabs li a{
+    color: white;
+}
+body.theme-default.mode-light .tabbable .nav.nav-tabs li a:hover{
+    border-radius: 0;
+    background: #aacdfa;
+    color: darkblue;
+}
+body.theme-default.mode-light .tabbable .nav.nav-tabs li.active a{
+    background: #c2ddff;
+    border-radius: 0;
+    color: darkblue;
+}
+body.theme-default.mode-light  .navbar-main .navbar-collapse .navbar-nav.main-menu a.nav-link:hover,
+body.theme-default.mode-light  .navbar-main .navbar-collapse .navbar-nav.main-menu  :hover{
+    background: rgba(3, 57, 234, 0.3);
+}
+body.theme-default.mode-dark  .navbar-main .navbar-nav a.nav-link:hover,
+body.theme-default.mode-dark  .navbar-main .navbar-nav :hover{
+    background: #263d4d;
 }

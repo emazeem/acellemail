@@ -30,7 +30,7 @@
                 @if ($plugins->count() >= 0)
                     <div class="filter-box">
                         <div class="dropdown list_actions" style="display: none">
-                            <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -47,7 +47,7 @@
                 @endif
             </div>
             <div class="text-end">
-                <a href="{{ action("Admin\PluginController@install") }}" role="button" class="btn btn-secondary">
+                <a href="{{ action("Admin\PluginController@install") }}" role="button" class="btn btn-primary">
                     <span class="material-symbols-rounded">add</span> {{ trans('messages.install_plugin') }}
                 </a>
             </div>

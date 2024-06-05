@@ -44,7 +44,7 @@
                 @endif
             </div>
             <div class="text-end">
-                <a href="javascript:goToDownLoad('click_logs')" role="button" class="btn btn-secondary">
+                <a href="javascript:goToDownLoad('click_logs')" role="button" class="btn btn-primary">
                     <i class="icon icon-download me-1"></i> {{ trans('messages.click_log.download') }}
                 </a>
             </div>

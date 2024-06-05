@@ -56,7 +56,7 @@
                                         @if ($subscription->planGeneral->uid == $plan->uid)
                                             <a
                                                 href="javascript:;"
-                                                class="btn btn-secondary rounded-3 d-block mt-4 shadow-sm" disabled>
+                                                class="btn btn-primary rounded-3 d-block mt-4 shadow-sm" disabled>
                                                     {{ trans('messages.plan.current_subscribed') }}
                                             </a>
                                         @else

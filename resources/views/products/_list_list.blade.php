@@ -29,7 +29,7 @@
 				<td class="text-end">
 					<a href="{{ action('SourceController@sync', $product->uid) }}"
 						link-method="POST"
-						role="button" class="btn btn-secondary m-icon pl-3">
+						role="button" class="btn btn-primary m-icon pl-3">
 						<span class="material-symbols-rounded me-2">link</span>{{ trans('messages.view') }}</a>
 					<div class="btn-group">
 						<button role="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>

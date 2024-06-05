@@ -44,15 +44,12 @@
                         </label>
                     </div>
                     <div class="dropdown list_actions" style="display: none">
-                        <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                        <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                             {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item"
-                                    link-method="POST"
-                                    link-confirm="{{ trans('messages.enable_automations_confirm') }}"
-                                    href="{{ action('Automation2Controller@enable') }}"
+                                <a class="dropdown-item" link-method="POST" link-confirm="{{ trans('messages.enable_automations_confirm') }}" href="{{ action('Automation2Controller@enable') }}"
                                 >
                                     <span class="material-symbols-rounded me-2">play_arrow</span> {{ trans('messages.enable') }}
                                 </a>
@@ -84,13 +81,13 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="{{ action("Automation2Controller@wizard") }}" role="button" class="btn btn-secondary create-automation2">
+                <a href="{{ action("Automation2Controller@wizard") }}" role="button" class="btn btn-primary create-automation2">
                     <span class="material-symbols-rounded">add</span> {{ trans('messages.automation.create') }}
                 </a>
             </div>
         </div>
         
-        <div id="Automation2IndexContent">
+        <div id="Automation2IndexContent" class="pml-table-container ">
             
             
             

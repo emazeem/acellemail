@@ -56,7 +56,7 @@
                     @endif
 
                     <div class="text-left">
-                        <button class="btn btn-secondary me-2"><i class="icon-check"></i> {{ trans('messages.import') }}</button>
+                        <button class="btn btn-primary me-2"><i class="icon-check"></i> {{ trans('messages.import') }}</button>
                     </div>
                     <br />
                 </div>
@@ -89,14 +89,14 @@
                         </div>
                     </div>
                     <label style="margin-bottom:20px;font-style:italic;" id="bottomNotice"></label>
-                    <a id="cancelBtn" class="btn btn-secondary btn-icon cancel processing">
+                    <a id="cancelBtn" class="btn btn-primary btn-icon cancel processing">
                         {{ trans('messages.cancel') }}
                     </a>
                 </div>
 
                 <div class="form-group finish hide">
                     <div class="text-left">
-                    	<a id="downloadLog" target="_blank" href="#" role="button" class="btn btn-secondary">
+                    	<a id="downloadLog" target="_blank" href="#" role="button" class="btn btn-primary">
                                 <span class="material-symbols-rounded">file_download</span> {{ trans('messages.download_import_log') }}
                         </a>
                         <a href="#retry" class="btn btn-link me-2 retry"><span class="material-symbols-rounded">restart_alt</span> {{ trans('messages.import_another') }}</a>

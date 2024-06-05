@@ -75,7 +75,7 @@
 								])
 							</div>
 							<div class="btn-group list_actions me-2" style="display:none">
-								<button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+								<button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
 									{{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
@@ -159,7 +159,7 @@
 							</select>
 						</span>
 						<div class="btn-group list_columns me-2">
-							<button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+							<button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
 								{{ trans('messages.columns') }} <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu dropdown-menu-end">

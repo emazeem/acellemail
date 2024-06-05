@@ -66,7 +66,7 @@
                         <a link-method="POST" href="{{ action('FormController@publish', [
                             'uids' => [$form->uid],
                         ]) }}"
-                            role="button" class="btn btn-secondary list-action-single">
+                            role="button" class="btn btn-primary list-action-single">
                             <span class="material-symbols-rounded me-1">task_alt</span> {{ trans('messages.form.publish') }}
                         </a>
                     @endif

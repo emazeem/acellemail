@@ -99,7 +99,7 @@
     </div>
         
     <hr>
-    <a href="{{ action('CampaignController@schedule', ['uid' => $campaign->uid]) }}" class="btn btn-secondary">
+    <a href="{{ action('CampaignController@schedule', ['uid' => $campaign->uid]) }}" class="btn btn-primary">
         {{ trans('messages.next') }} <span class="material-symbols-rounded">arrow_forward</span>
     </a>
         

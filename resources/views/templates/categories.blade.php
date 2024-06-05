@@ -32,7 +32,7 @@
         <hr>
 
         <div class="mt-4">
-            <button type="submit" class="btn btn-secondary">{{ trans('messages.save') }}</button>
+            <button type="submit" class="btn btn-primary">{{ trans('messages.save') }}</button>
         </div>
     </form>
 

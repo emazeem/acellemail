@@ -19,26 +19,22 @@
 @endsection
 
 @section('content')
-    
-                @include("account._menu", [
-                    'menu' => 'log',
-                ])    
-    
-                <div class="listing-form"
-                    data-url="{{ action('AccountController@logsListing') }}"
-                    per-page="{{ Acelle\Model\Log::$itemsPerPage }}"                
-                >                
+
+    <div class="row bg-white profile-bg" style="border-radius: 20px;">
+        @include("account._menu", ['menu' => 'log'])
+        <div class="listing-form" data-url="{{ action('AccountController@logsListing') }}" per-page="{{ Acelle\Model\Log::$itemsPerPage }}">
                     <div class="d-flex top-list-controls top-sticky-content">
                         <div class="me-auto">
                             @if ($logs->count() >= 0)                    
                                 <div class="filter-box">
                                     <span class="filter-group">
+                                        <img src="{{url('images/filter.png')}}" alt="" class="img-fluid filter-img" >
                                         <span class="title text-semibold text-muted">{{ trans('messages.sort_by') }}</span>
                                         <select class="select" name="sort_order">
                                             <option value="created_at">{{ trans('messages.created_at') }}</option>
                                         </select>                                        
                                         <input type="hidden" name="sort_direction" value="desc" />
-<button type="button" class="btn btn-xs sort-direction" data-popup="tooltip" title="{{ trans('messages.change_sort_direction') }}" role="button" class="btn btn-xs">
+                                        <button type="button" class="btn btn-xs sort-direction" data-popup="tooltip" title="{{ trans('messages.change_sort_direction') }}" role="button" class="btn btn-xs">
                                             <span class="material-symbols-rounded desc">sort</span>
                                         </button>
                                     </span>
@@ -62,27 +58,25 @@
                         </div>
                     </div>
                     
-                    <div class="pml-table-container">
-                        
-                        
-                        
-                    </div>
+                    <div class="pml-table-container"></div>
                 </div>
+    </div>
+    <script>
+        var AccountLogsIndex = {
+            getList: function() {
+                return makeList({
+                    url: '{{ action('AccountController@logsListing') }}',
+                    container: $('.listing-form'),
+                    content: $('.pml-table-container')
+                });
+            }
+        };
 
-                <script>
-                    var AccountLogsIndex = {
-                        getList: function() {
-                            return makeList({
-                                url: '{{ action('AccountController@logsListing') }}',
-                                container: $('.listing-form'),
-                                content: $('.pml-table-container')
-                            });
-                        }
-                    };
-            
-                    $(document).ready(function() {
-                        AccountLogsIndex.getList().load();
-                    });
-                </script>
-    
+        $(document).ready(function() {
+            AccountLogsIndex.getList().load();
+        });
+    </script>
+    <style>
+
+    </style>
 @endsection

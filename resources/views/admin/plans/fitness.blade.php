@@ -55,7 +55,7 @@
         </div>
         <hr>
         <div class="mt-4">
-        <button type="submit" class="btn btn-secondary">{{ trans('messages.plan.fitness.save') }}</button>
+        <button type="submit" class="btn btn-primary">{{ trans('messages.plan.fitness.save') }}</button>
         <button role="button" class="btn btn-link" data-dismiss="modal">{{ trans('messages.close') }}</button>
         </div>
     <form>

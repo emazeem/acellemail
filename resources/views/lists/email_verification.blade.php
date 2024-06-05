@@ -50,13 +50,13 @@
 
                 </div>
                 <label style="margin-bottom:20px;font-style:italic;" id="bottomNotice"></label>
-                <a role="button" id="cancelBtn" class="btn btn-secondary btn-icon cancel processing">
+                <a role="button" id="cancelBtn" class="btn btn-primary btn-icon cancel processing">
                     {{ trans('messages.cancel') }}
                 </a>
 
                 <div class="form-group finish hide">
                     <div class="text-left">
-                        <a id="doneBtn" target="_blank" href="#" type="button" class="btn btn-secondary success">
+                        <a id="doneBtn" target="_blank" href="#" type="button" class="btn btn-primary success">
                             {{ trans('messages.label.done') }}
                         </a>
                         <a id="retryBtn" href="retryBtn" class="btn bg-grey-600 me-2 retry"><span class="material-symbols-rounded">restart_alt</span> {{ trans('messages.retry') }}</a>
@@ -82,7 +82,7 @@
                 ])
 
                 <div class="text-left">
-                    <button id="startBtn" class="btn btn-secondary me-2"> {{ trans('messages.verification.button.start') }}</button>
+                    <button id="startBtn" class="btn btn-primary me-2"> {{ trans('messages.verification.button.start') }}</button>
                 </div>
             </form>
             
@@ -93,7 +93,7 @@
                 'total' => number_with_delimiter($list->readCache('SubscriberCount')),
             ]) !!}</p>
             <p>
-                <a link-confirm="{{ trans('messages.reset_list_verification_confirm') }}" link-method="POST" class="btn btn-secondary"
+                <a link-confirm="{{ trans('messages.reset_list_verification_confirm') }}" link-method="POST" class="btn btn-primary"
                     href="{{ action("MailListController@resetVerification", $list->uid) }}">
                         {{ trans('messages.verification.button.reset') }}
                 </a>

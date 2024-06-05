@@ -57,7 +57,7 @@
                 </div>
 
                 <p>{{ trans('messages.tracking_domain.show.redirect_setup.test') }}</p>
-                <a id="btnTest" href="#" class="btn btn-secondary mr-2" target="_blank">{{ trans('messages.tracking_domain.show.redirect_setup.test_button') }}</a>
+                <a id="btnTest" href="#" class="btn btn-primary mr-2" target="_blank">{{ trans('messages.tracking_domain.show.redirect_setup.test_button') }}</a>
             @else
                 <div data-type="admin-notification" class="alert alert-success" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
                     <div style="display: flex; flex-direction: row; align-items: center;">

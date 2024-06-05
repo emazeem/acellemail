@@ -8,7 +8,7 @@
                 <br>Click on a number to see its details</p>
         </div>
         <div class="ml-auto pl-4">
-            <button class="btn btn-secondary" onclick="timelinePopup.load()">Refresh</button>
+            <button class="btn btn-primary" onclick="timelinePopup.load()">Refresh</button>
         </div>
     </div>  
            

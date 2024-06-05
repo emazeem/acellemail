@@ -27,7 +27,7 @@
         </div>
 
         <div class="mt-4 text-center">
-            <button type="submit" class="btn btn-secondary me-1">{{ trans('messages.preheader.save') }}</button>
+            <button type="submit" class="btn btn-primary me-1">{{ trans('messages.preheader.save') }}</button>
             <button type="button" class="btn btn-default close">{{ trans('messages.preheader.close') }}</button>
         </div>
     </form>

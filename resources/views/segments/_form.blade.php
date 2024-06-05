@@ -63,14 +63,14 @@
 												])
 											</div>
 											<div class="col-md-1">
-												<a onclick="$(this).parents('.condition-line').remove()" href="#delete" class="btn btn-light"><span class="material-symbols-rounded">delete_outline</span></a>
+												<a onclick="$(this).parents('.condition-line').remove()" href="#delete" class="btn btn-danger"><span class="material-symbols-rounded">delete_outline</span></a>
 											</div>
 										</div>
 									@endforeach
 								</div>
 
 								<br />
-								<a sample-url="{{ action('SegmentController@sample_condition', $list->uid) }}" href="#add_condition" class="btn btn-info bg-teal-800 add-segment-condition">
+								<a sample-url="{{ action('SegmentController@sample_condition', $list->uid) }}" href="#add_condition" class="btn btn-primary bg-teal-800 add-segment-condition">
 									<span class="material-symbols-rounded">add</span> {{ trans('messages.add_condition') }}
 								</a>
 

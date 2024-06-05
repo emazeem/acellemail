@@ -50,7 +50,7 @@
                     <p class="text-muted mb-0">{!! trans('messages.website.connect_to_your_website.desc') !!}</p>
                 </div>
                 <div class="ms-auto">
-                    <a href="{{ action('WebsiteController@index') }}" class="btn btn-default ms-2 fw-600 px-4 py-2">
+                    <a href="{{ action('WebsiteController@index') }}" class="btn btn-primary ms-2 fw-600 px-4 py-2">
                         {{ trans('messages.manage_your_sites') }}
                     </a>
                 </div>
@@ -58,29 +58,33 @@
         </div>
     </div>
 
-    <h5 class="text-muted mb-3 fs-6 fst-italic">{{ trans('messages.website.get_custom_website_code') }}</h5>
     <form id="WebsiteCreate" action="{{ action('WebsiteController@create') }}" method="POST">
         {{ csrf_field() }}
         <div class="row">
-            <div class="col-md-6">
-                @include('helpers.form_control', [
-                    'type' => 'text',
-                    'class' => '',
-                    'name' => 'url',
-                    'value' => $website->url,
-                    'label' => trans('messages.website.enter_url'),
-                    'help_class' => 'website',
-                    'placeholder' => trans('messages.website.url.placeholder'),
-                    'rules' => ['name' => 'required']
-                ])
+            <div class="card">
+                <div class="card-body" style="min-height: 40vh">
+                    <h5 class="text-muted mb-3 fs-6 fst-italic">{{ trans('messages.website.get_custom_website_code') }}</h5>
+                    <div class="col-md-6">
+                        @include('helpers.form_control', [
+                            'type' => 'text',
+                            'class' => '',
+                            'name' => 'url',
+                            'value' => $website->url,
+                            'label' => trans('messages.website.enter_url'),
+                            'help_class' => 'website',
+                            'placeholder' => trans('messages.website.url.placeholder'),
+                            'rules' => ['name' => 'required']
+                        ])
 
-                <div class="mt-4">
-                    <button type="submit" class="btn btn-secondary">
-                        {{ trans('messages.website.get_code') }}
-                    </button>
-                    <a href="{{ action('WebsiteController@index') }}" class="btn btn-link ms-2">
-                        {{ trans('messages.cancel') }}
-                    </a>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ trans('messages.website.get_code') }}
+                            </button>
+                            <a href="{{ action('WebsiteController@index') }}" class="btn btn-link ms-2">
+                                {{ trans('messages.cancel') }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

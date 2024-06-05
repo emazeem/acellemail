@@ -32,7 +32,7 @@
                 @endif                            
             </div>
             
-            <button type="submit" class="btn btn-secondary">
+            <button type="submit" class="btn btn-primary">
                 {{ trans('messages.send_password_reset_link') }}  <i class="icon-circle-right2 position-right"></i>
             </button>
             <a href="{{ url("/login") }}" class="btn btn-light">

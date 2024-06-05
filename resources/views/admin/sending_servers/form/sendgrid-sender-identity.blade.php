@@ -69,7 +69,7 @@
         </div>
         <div class="col-md-6">
             <a href="https://app.sendgrid.com" role="button" target="_blank"
-              class="btn btn-secondary me-2">
+              class="btn btn-primary me-2">
                 {{ trans('messages.sending_serbers.go_to_sendgrid_dashboard') }}
             </a>
 
@@ -99,7 +99,7 @@
 
             <hr>
             <div class="mt-20">
-                <button class="btn btn-secondary me-2">{{ trans('messages.save') }}</button>
+                <button class="btn btn-primary me-2">{{ trans('messages.save') }}</button>
                 <a href="{{ action('Admin\SendingServerController@index') }}" role="button" class="btn btn-link">
                     {{ trans('messages.cancel') }}
                 </a>

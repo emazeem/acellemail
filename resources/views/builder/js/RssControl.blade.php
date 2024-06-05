@@ -22,10 +22,10 @@
                                 <div class="place-value" style="width:100%">
                                     <input type="text" value="" class="form-control rss-url">
                                 </div>
-                                <button class="click-load btn btn-secondary ml-2">
+                                <button class="click-load btn btn-primary ml-2">
                                     {{ trans('messages.widget.rss.load_url') }}
                                 </button>
-                                <button class="click-change btn btn-secondary ml-2">
+                                <button class="click-change btn btn-primary ml-2">
                                     {{ trans('messages.widget.rss.change_url') }}
                                 </button>
                             </div>
@@ -153,7 +153,7 @@
                             <textarea class="rss-template-edit rss-editor-`+key+` form-control template-content" data-class="`+key+`">`+t.template+`</textarea>
                             <div class="mt-2 text-right">
                                 <button class="btn btn-primary mr-1 rss-template-save" data-class="`+key+`">{{ trans('messages.rss.template.save') }}</button>
-                                <button class="btn btn-secondary rss-template-cancel" data-class="`+key+`">{{ trans('messages.rss.template.cancel') }}</button>
+                                <button class="btn btn-primary rss-template-cancel" data-class="`+key+`">{{ trans('messages.rss.template.cancel') }}</button>
                             </div>
                         </div>
                     `;

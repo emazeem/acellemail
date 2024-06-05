@@ -152,7 +152,7 @@
 							<div class="d-flex">
 								<p>{{ trans('messages.webhooks.wording') }}</p>
 								<div class="ms-4">
-									<a href="javascript:;" class="btn btn-secondary manage_webhooks_but">
+									<a href="javascript:;" class="btn btn-primary manage_webhooks_but">
 										{{ trans('messages.webhooks.manage') }}
 									</a>
 								</div>
@@ -164,7 +164,7 @@
         </div>
         
         <div class="text-end mt-5 {{ Auth::user()->customer->allowUnverifiedFromEmailAddress() ? '' : 'unverified_next_but' }}">
-            <button class="btn btn-secondary">
+            <button class="btn btn-primary">
                 <span class="d-flex align-items-center">
                     <span>{{ trans('messages.email.setup.save_next') }}</span> <i class="material-symbols-rounded">keyboard_arrow_right</i>
                 </span>

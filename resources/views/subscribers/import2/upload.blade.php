@@ -33,7 +33,7 @@
             </form>
 
             <a href="javascript:;" mapping-action="mapping"
-                class="btn btn-mc_primary bg-teal-800 mt-4" style="display:none"
+                class="btn btn-primary  mt-4" style="display:none"
             >
                 {{ trans('messages.subscriber.import.next_mapping') }}
             </a>

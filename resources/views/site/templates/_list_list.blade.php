@@ -31,7 +31,7 @@
                 <td class="text-end">
                     @if (!$template['active'])
                         <a link-method="POST" href="{{ action('Site\TemplateController@activate', $template['id']) }}"
-                            role="button" class="btn btn-secondary list-action-single"
+                            role="button" class="btn btn-primary list-action-single"
                         >
                             {{ trans('messages.site.template.activate') }}
                         </a>

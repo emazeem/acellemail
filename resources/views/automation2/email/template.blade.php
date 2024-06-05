@@ -31,7 +31,7 @@
                                 <a href="{{ action('Automation2Controller@templateEditClassic', [
                                         'uid' => $automation->uid,
                                         'email_uid' => $email->uid,
-                                    ]) }}" class="btn btn-secondary mr-1 template-compose-classic"
+                                    ]) }}" class="btn btn-primary mr-1 template-compose-classic"
                                 >
                                     {{ trans('messages.campaign.compose_email_classic') }}
                                 </a>
@@ -78,7 +78,7 @@
                 <a href="javascript:;" onclick="popup.load('{{ action('Automation2Controller@emailConfirm', [
                     'uid' => $automation->uid,
                     'email_uid' => $email->uid
-                ]) }}')" class="btn btn-secondary">
+                ]) }}')" class="btn btn-primary">
                     <span class="d-flex align-items-center">
                         <span>{{ trans('messages.automation.email.next_confirm') }}</span> <i class="material-symbols-rounded">keyboard_arrow_right</i>
                     </span>

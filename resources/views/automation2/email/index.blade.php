@@ -10,11 +10,11 @@
 @if ($email)
     <form action="{{ action('Automation2Controller@emailSetup', $automation->uid) }}" method="POST" class="form-validate-jqueryz">
         {{ csrf_field() }}
-        
+
         @include('automation2.email._summary')
-        
-        <div class="trigger-action mt-4">    
-            <span class="btn btn-secondary email-settings-change mr-1"
+
+        <div class="trigger-action mt-4">
+            <span class="btn btn-primary email-settings-change mr-1"
             >
                 {{ trans('messages.automation.email.settings') }}
             </span>
@@ -30,7 +30,7 @@
                             </a>
             @endif
         </div>
-        
+
     <form>
 
     <div class="mt-4 d-flex py-3">
@@ -39,13 +39,13 @@
                 {{ trans('messages.automation.dangerous_zone') }}
             </h4>
             <p class="">
-                {{ trans('messages.automation.action.delete.wording') }}         
+                {{ trans('messages.automation.action.delete.wording') }}
             </p>
             <div class="mt-3">
                 <a href="{{ action('Automation2Controller@emailDelete', [
                     'uid' => $automation->uid,
                     'email_uid' => $email->uid,
-                ]) }}" data-confirm="{{ trans('messages.automation.action.delete.confirm') }}" class="btn btn-secondary email-action-delete">
+                ]) }}" data-confirm="{{ trans('messages.automation.action.delete.confirm') }}" class="btn btn-primary email-action-delete">
                     <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.remove_this_action') }}
                 </a>
             </div>
@@ -56,15 +56,15 @@
         // Click on exist action
         $('.email-settings-change').click(function(e) {
             e.preventDefault();
-            
+
             var url = '{{ action('Automation2Controller@emailTemplate', ['uid' => $automation->uid, 'email_uid' => $email->uid]) }}';
-            
+
             popup.load(url);
         });
-        
+
         $('.email-action-delete').click(function(e) {
             e.preventDefault();
-            
+
             var confirm = $(this).attr('data-confirm');
             var url = $(this).attr('href');
 
@@ -89,21 +89,21 @@
                         success: function (response) {
                             // remove current node
                             tree.getSelected().detach();
-                            
+
                             // save tree
-                            saveData(function() {                            
+                            saveData(function() {
                                 // notify
                                 notify({
         type: 'success',
         title: '{!! trans('messages.notify.success') !!}',
         message: response.message
     });
-                                
+
                                 // load default sidebar
                                 sidebar.load('{{ action('Automation2Controller@settings', $automation->uid) }}');
                             });
                         }
-                    });                        
+                    });
                 },
             });
         });
@@ -125,10 +125,10 @@
                 {{ trans('messages.automation.dangerous_zone') }}
             </h4>
             <p class="">
-                {{ trans('messages.automation.action.delete.wording') }}         
+                {{ trans('messages.automation.action.delete.wording') }}
             </p>
             <div class="mt-3">
-                <a href="javascript:;" data-confirm="{{ trans('messages.automation.action.delete.confirm') }}" class="btn btn-secondary email-action-delete">
+                <a href="javascript:;" data-confirm="{{ trans('messages.automation.action.delete.confirm') }}" class="btn btn-primary email-action-delete">
                     <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.remove_this_action') }}
                 </a>
             </div>
@@ -146,7 +146,7 @@
 
             $('.email-action-delete').on('click', function(e) {
                 e.preventDefault();
-                
+
                 var confirm = $(this).attr('data-confirm');
                 var url = $(this).attr('href');
 
@@ -155,7 +155,7 @@
                     ok: function(dialog) {
                         // remove current node
                         tree.getSelected().detach();
-                                
+
                         // save tree
                         saveData(function() {
                             // notify
@@ -164,15 +164,15 @@
                                 title: '{!! trans('messages.notify.success') !!}',
                                 message: '{!! trans('messages.automation.email.deteled') !!}',
                             });
-                            
+
                             // load default sidebar
-                            sidebar.load('{{ action('Automation2Controller@settings', $automation->uid) }}');  
+                            sidebar.load('{{ action('Automation2Controller@settings', $automation->uid) }}');
                         });
                     },
                 });
             });
         });
-        
+
     </script>
 
 @endif

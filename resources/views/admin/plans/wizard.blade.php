@@ -114,7 +114,7 @@
                  </div>
             </div>
             <div class="mt-4 text-center">
-                <button type="submit" class="btn btn-secondary me-2">{{ trans('messages.plan.wizard.next') }}</button>
+                <button type="submit" class="btn btn-primary me-2">{{ trans('messages.plan.wizard.next') }}</button>
                 <a href="javascript:;" class="btn btn-link me-2" data-dismiss="modal">{{ trans('messages.plan.wizard.cancel') }}</a>
             </div>
             

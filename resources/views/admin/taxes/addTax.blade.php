@@ -27,7 +27,7 @@
         </div>
 
         <div class="mt-3">
-            <button class="btn btn-secondary px-4">{{ trans('messages.save') }}</button>
+            <button class="btn btn-primary px-4">{{ trans('messages.save') }}</button>
         </div>
     </form>
 

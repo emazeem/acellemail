@@ -54,7 +54,7 @@
                 <div class="d-flex align-items-center mt-4 template-create-sticky">
                     <h3 class="text-semibold mr-auto mb-0 mt-0">{{ trans('messages.template.select_your_template') }}</h3>
                     <div class="text-left">
-                        <a href="javascript:;" class="btn btn-secondary me-2 start-design">
+                        <a href="javascript:;" class="btn btn-primary me-2 start-design">
                             <i class="icon-check"></i> {{ trans('messages.template.create_and_design') }}
                         </a>
                     </div>

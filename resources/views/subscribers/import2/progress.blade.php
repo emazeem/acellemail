@@ -33,7 +33,7 @@
             </div>
 
             <div>
-                <a id="ImportCancelButton" href="javascript:;" class="btn btn-secondary me-1" progress-control="cancel">
+                <a id="ImportCancelButton" href="javascript:;" class="btn btn-primary me-1" progress-control="cancel">
                     {{ trans('messages.cancel') }}
                 </a>
 

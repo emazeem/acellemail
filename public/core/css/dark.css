@@ -122,13 +122,11 @@ body.mode-dark .text-muted {
     color: rgba(255,255,255,0.85)!important;
 }
 body.mode-dark .btn.sort-direction {
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.1);
     border-color: rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.85);
+    color: white;
 }
-body.mode-dark .btn.sort-direction:hover {
-    background-color: rgba(255,255,255,0.3);
-}
+
 body.mode-dark .form-control, body.mode-dark .select2 {
     border-color: rgba(255,255,255,0.3);
     background-color: rgba(255,255,255,0.05);
@@ -886,4 +884,10 @@ body.mode-dark [chat-control="insert"] {
 }
 body.mode-dark [chat-control="insert"]:hover {
     background-color: rgba(255,255,255,0.1);
+}
+body.mode-dark .select2-container .select2-selection--single .select2-selection__rendered{
+    color: white!important;
+}
+body.mode-dark .filter-group .filter-img{
+    filter: invert();
 }

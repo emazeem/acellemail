@@ -1,10 +1,15 @@
 .theme-grey .navbar-main {
     background: -webkit-repeating-linear-gradient(rgba(40,40,40,0.85), black)!important;
-
+}
+.theme-pink main.page-container{
+    background: #c4c4c4;
 }
 .theme-grey .btn-info {
     background-color: #c4c4c4;
     border-color: #c4c4c4;
+}
+.theme-grey .media.profile-image{
+    color:black
 }
 .theme-grey .btn-info:hover {
     background-color: #a7a7a7;
@@ -57,7 +62,12 @@
 .theme-grey .nav-tabs > li > a.nav-link.active,
 .theme-grey .nav-tabs > li > a.nav-link:hover,
 .theme-grey .nav-tabs > li > a.nav-link:focus {
-    border-bottom-color: #666;
+    background: rgb(27, 27, 27);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(27, 27, 27);
 }
 body.mode-dark.theme-grey,
 body.mode-dark.theme-grey .modal-content,

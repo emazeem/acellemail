@@ -36,7 +36,7 @@
     'uid' => $automation->uid,
     'operation' =>  $operation . '_contact',
     'id' => request()->id,
-]) }}')" class="btn btn-secondary me-1">{{ trans('messages.automation.edit_operation') }}</a>
+]) }}')" class="btn btn-primary me-1">{{ trans('messages.automation.edit_operation') }}</a>
 
 <a href="javascript:;" onclick="popup.load('{{ action('Automation2Controller@operationSelect', [
     'uid' => $automation->uid,
@@ -53,7 +53,7 @@
         </p>
         <div class="mt-3">
             <a href="javascript:;" data-confirm="{{ trans('messages.automation.action.delete.confirm') }}"
-                class="btn btn-secondary operation-delete">
+                class="btn btn-primary operation-delete">
                 <span class="material-symbols-rounded">delete</span> {{ trans('messages.automation.remove_this_action') }}
             </a>
         </div>

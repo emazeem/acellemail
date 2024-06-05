@@ -39,12 +39,12 @@
                 <td class="text-end text-nowrap pe-0">
                     @if (\Gate::allows('update', $item))
                         <a href="{{ action('SegmentController@edit', ['list_uid' => $list->uid, "uid" => $item->uid]) }}"
-                           role="button" class="btn btn-secondary btn-icon">
+                           role="button" class="btn btn-primary btn-icon">
                             <span class="material-symbols-rounded">edit</span> {{ trans('messages.edit') }}
                         </a>
                     @endif
                     <div class="btn-group">
-                        <button role="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"><span
+                        <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"><span
                                     class="caret ml-0"></span></button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             @if (\Gate::allows('delete', $item))

@@ -44,7 +44,7 @@
 					@endphp
 					<a target="_blank" href="{{ $checkout_url }}" class="btn btn-light m-icon pl-3 copy-product-checkout-url">
 						<span class="material-symbols-rounded me-2">monetization_on</span>Copy checkout URL</a>
-					<a href="{{ action('Site\ProductController@edit', $wooProduct->id) }}" class="btn btn-secondary m-icon pl-3">
+					<a href="{{ action('Site\ProductController@edit', $wooProduct->id) }}" class="btn btn-primary m-icon pl-3">
 						<span class="material-symbols-rounded me-2">edit</span>{{ trans('messages.edit') }}</a>
 					<div class="btn-group">
 						<button role="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"></button>

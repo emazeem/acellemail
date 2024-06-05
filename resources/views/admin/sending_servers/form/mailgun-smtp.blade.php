@@ -104,7 +104,7 @@
                     <a
                         href="{{ action('Admin\SendingServerController@testConnection', $server->uid) }}"
                         role="button"
-                        class="btn btn-secondary me-2 test-connection-button"
+                        class="btn btn-primary me-2 test-connection-button"
                         mask-title="{{ trans('messages.sending_server.testing') }}"
                     >
                         {{ trans('messages.sending_server.test_connection') }}
@@ -112,7 +112,7 @@
                         <a id="SendTestEmailButton"
                         href="{{ action('Admin\SendingServerController@test', $server->uid) }}"
                         role="button"
-                        class="btn btn-secondary me-2 modal_link"
+                        class="btn btn-primary me-2 modal_link"
                         data-in-form="true"
                         link-method="GET"
                     >
@@ -123,13 +123,13 @@
                     </a>
                 </span>
                 <span class="cancel-group hide">
-                    <button class="btn btn-secondary me-2">{{ trans('messages.save') }}</button>
+                    <button class="btn btn-primary me-2">{{ trans('messages.save') }}</button>
                     <a href="javascript:;" role="button" class="btn btn-link switch-form-toggle">
                         {{ trans('messages.edit') }}
                     </a>
                 </span>
             @else
-                <button class="btn btn-secondary me-2">{{ trans('messages.save') }}</button>
+                <button class="btn btn-primary me-2">{{ trans('messages.save') }}</button>
                 <a href="{{ action('Admin\SendingServerController@index') }}" role="button" class="btn btn-link">
                     {{ trans('messages.cancel') }}
                 </a>

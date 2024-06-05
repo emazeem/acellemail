@@ -64,7 +64,7 @@
 						<a href="{{ action('Automation2Controller@subscribersShow', [
 							'uid' => $automation->uid,
 							'subscriber_uid' => $subscriber->uid
-						]) }}" role="button" class="btn btn-secondary btn-icon">
+						]) }}" role="button" class="btn btn-primary btn-icon">
 							{{ trans('messages.automation.subscriber.view') }}
 						</a>
 					@endif

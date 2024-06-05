@@ -149,7 +149,7 @@
                             </div>
 
                             <div class="mt-2">
-                                <button type="submit" class="btn btn-secondary">{{ trans('messages.save') }}</button>
+                                <button type="submit" class="btn btn-primary">{{ trans('messages.save') }}</button>
                             </div>
                         </form>
                     </div>

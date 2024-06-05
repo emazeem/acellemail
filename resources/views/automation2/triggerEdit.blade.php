@@ -17,12 +17,12 @@
     
     <div class="trigger-action mt-2">
         @if (!in_array($key, ['say-goodbye-subscriber', 'welcome-new-subscriber', 'api-3-0']))
-            <button class="btn btn-secondary trigger-save-change mr-1">
+            <button class="btn btn-primary trigger-save-change mr-1">
                 {{ trans('messages.automation.trigger.save_change') }}
             </button>
         @endif
 
-        <a href="javascript:;" class="btn btn-secondary change-trigger-but">
+        <a href="javascript:;" class="btn btn-primary change-trigger-but">
             {{ trans('messages.automation.trigger.change') }}
         </a>
     </div>

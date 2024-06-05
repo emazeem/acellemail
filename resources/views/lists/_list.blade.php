@@ -56,7 +56,7 @@
                 <td class="text-end pe-0">
                     <div class="d-flex align-items-center text-nowrap justify-content-end" role="group">
                         <a href="{{ action('SubscriberController@create', $list->uid) }}" data-popup="tooltip"
-                            title="{{ trans('messages.create_subscriber') }}" role="button" class="btn btn-secondary btn-icon me-1">
+                            title="{{ trans('messages.create_subscriber') }}" role="button" class="btn btn-primary btn-icon me-1">
                             <span class="material-symbols-rounded">person_add</span>
                         </a>
                         <a href="{{ action('MailListController@overview', $list->uid) }}" role="button" class="btn btn-primary me-1">

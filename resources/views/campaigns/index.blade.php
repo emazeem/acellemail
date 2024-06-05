@@ -22,7 +22,7 @@
         data-url="{{ action('CampaignController@listing') }}"
         per-page="{{ Acelle\Model\MailList::$itemsPerPage }}"
     >
-        <div class="d-flex top-list-controls top-sticky-content">
+        <div class="d-flex top-list-controls top-sticky-content bg-transparent border-0 shadow-none">
             <div class="me-auto">
                 @if ($campaigns->count() >= 0)
                     <div class="filter-box">
@@ -34,7 +34,7 @@
                         <div class="dropdown list_actions" style="display: none">
                             <button type="button"
                                 id="dropdownListActions"
-                                class="btn btn-secondary dropdown-toggle"
+                                class="btn btn-primary dropdown-toggle"
                                 data-bs-toggle="dropdown"
                             >
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
@@ -84,17 +84,14 @@
             </div>
             <div class="text-end">
                 @if (Auth::user()->customer->can('create', new Acelle\Model\Campaign()))
-                    <a href="{{ action('CampaignController@selectType') }}" role="button" class="btn btn-secondary">
+                    <a href="{{ action('CampaignController@selectType') }}" role="button" class="btn btn-primary">
                         <span class="material-symbols-rounded">add</span> {{ trans('messages.create_campaign') }}
                     </a>
                 @endif
             </div>
         </div>
 
-        <div id="CampaignsIndexContent" class="pml-table-container">
-
-
-
+        <div id="CampaignsIndexContent" class="pml-table-container ">
         </div>
     </div>
 

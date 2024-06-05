@@ -21,7 +21,7 @@
 <div class="row mb-5">
     <div class="col-md-3">
         <div class="bg-teal-400">
-            <div class="bg-secondary p-3 shadow rounded-3 text-white text-center mb-2">
+            <div class="bg-primary p-3 shadow rounded-3 text-white text-center mb-2">
                 <h2 class="text-semibold mb-1 mt-0">{{ number_with_delimiter($campaign->readCache('ActiveSubscriberCount')) }} / {{ number_with_delimiter($campaign->readCache('SubscriberCount')) }}</h2>
                 <div class="text-muted">{{ trans('messages.campaign.active_subscribers') }}</div>
             </div>
@@ -29,7 +29,7 @@
     </div>
     <div class="col-md-3">
         <div class="bg-teal-400">
-            <div class="bg-secondary p-3 shadow rounded-3 text-white text-center mb-2">
+            <div class="bg-primary p-3 shadow rounded-3 text-white text-center mb-2">
                 <h2 class="text-semibold mb-1 mt-0">{{ number_to_percentage($campaign->readCache('DeliveredRate')) }}</h2>
                 <div class="text-muted">{{ number_with_delimiter($campaign->readCache('DeliveredCount')) }} {{ trans('messages.campaign.successfully_delivered') }}</div>
             </div>
@@ -37,7 +37,7 @@
     </div>
     <div class="col-md-3">
         <div class="bg-teal-400">
-            <div class="bg-secondary p-3 shadow rounded-3 text-white text-center mb-2">
+            <div class="bg-primary p-3 shadow rounded-3 text-white text-center mb-2">
                 <h2 class="text-semibold mb-1 mt-0">{{ number_to_percentage($campaign->readCache('FailedDeliveredRate')) }}</h2>
                 <div class="text-muted">{{ number_with_delimiter($campaign->readCache('FailedDeliveredCount')) }} {{ trans('messages.campaign.failed_delivery_attempt') }}</div>
             </div>
@@ -45,7 +45,7 @@
     </div>
     <div class="col-md-3">
         <div class="bg-teal-400">
-            <div class="bg-secondary p-3 shadow rounded-3 text-white text-center mb-2">
+            <div class="bg-primary p-3 shadow rounded-3 text-white text-center mb-2">
                 <h2 class="text-semibold mb-1 mt-0">{{ number_to_percentage($campaign->readCache('NotDeliveredRate')) }}</h2>
                 <div class="text-muted">{{ number_with_delimiter($campaign->readCache('NotDeliveredCount')) }} {{ trans('messages.campaign.pending_delivery') }}</div>
             </div>
@@ -69,7 +69,7 @@
                             ])
                         </div>
                         <div class="btn-group list_actions me-2" style="display:none">
-                            <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -135,7 +135,7 @@
                         </div>
                     </span>
                     <div class="btn-group list_columns me-2">
-                        <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                        <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                             {{ trans('messages.columns') }} <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">

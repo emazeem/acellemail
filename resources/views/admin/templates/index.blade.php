@@ -35,7 +35,7 @@
                             </label>
                         </div>
                         <div class="dropdown list_actions" style="display: none">
-                            <button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                            <button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                                 {{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -95,10 +95,10 @@
                     </div>
     
                     <div>
-                        <a href="{{ action('Admin\TemplateController@uploadTemplate') }}" class="btn btn-secondary ml-auto">
+                        <a href="{{ action('Admin\TemplateController@uploadTemplate') }}" class="btn btn-primary ml-auto">
                             <span class="material-symbols-rounded">file_upload</span> {{ trans('messages.upload') }}
                         </a>
-                        <a href="{{ action('Admin\TemplateController@builderCreate') }}" class="btn btn-secondary">
+                        <a href="{{ action('Admin\TemplateController@builderCreate') }}" class="btn btn-primary">
                             <span class="material-symbols-rounded">add</span> {{ trans('messages.create') }}
                         </a>
                     </div>

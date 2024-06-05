@@ -44,9 +44,9 @@
         
         <div class="sub-section">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 text-center">
                     <button link-method="POST"
-                        class="btn btn-secondary px-4">
+                        class="btn btn-primary px-4">
                             {{ trans('messages.save_payment_method') }}
                     </button>
                 </div>

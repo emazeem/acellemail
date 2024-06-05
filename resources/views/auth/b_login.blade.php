@@ -145,5 +145,9 @@
         $(this).closest('form').submit();
     });
 </script>
-
+<style>
+    .text-center.mt-4.text-white.small a{
+        color: white!important;
+    }
+</style>
 @endsection

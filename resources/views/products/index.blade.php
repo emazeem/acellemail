@@ -61,7 +61,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="{{ action("SourceController@index") }}" role="button" class="btn btn-secondary m-icon">
+                <a href="{{ action("SourceController@index") }}" role="button" class="btn btn-primary m-icon">
                     <span class="material-symbols-rounded">store</span> {{ trans('messages.stores_connections') }}
                 </a>
             </div>

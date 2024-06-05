@@ -19,7 +19,7 @@
 	<div class="d-flex my-4">
 		<h2 class="text-primary me-auto"><span class="material-symbols-rounded">people</span> {{ trans('messages.subscribers') }}</h2>
 		<div class="text-end">
-			<a href="{{ action("SubscriberController@create", $list->uid) }}" role="button" class="btn btn-secondary">
+			<a href="{{ action("SubscriberController@create", $list->uid) }}" role="button" class="btn btn-primary">
 				<span class="material-symbols-rounded">add</span> {{ trans('messages.create_subscriber') }}
 			</a>
 		</div>
@@ -40,7 +40,7 @@
 							])
 						</div>
 						<div class="btn-group list_actions me-2" style="display:none">
-							<button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+							<button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
 								{{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">

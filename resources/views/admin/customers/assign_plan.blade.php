@@ -42,7 +42,7 @@
                                         @if ($customer->getNewOrActiveGeneralSubscription() && !$customer->getNewOrActiveGeneralSubscription()->isEnded() && $customer->getNewOrActiveGeneralSubscription()->planGeneral->uid == $plan->uid)
                                             <a
                                                 href="javascript:;"
-                                                class="btn btn-secondary mt-30" disabled>
+                                                class="btn btn-primary mt-30" disabled>
                                                     {{ trans('messages.plan.current_subscribed') }}
                                             </a>
                                         @else
@@ -56,7 +56,7 @@
                                                         "uid" => $customer->uid,
                                                         "plan_uid" => $plan->uid,
                                                     ]) }}"
-                                                    class="btn btn-secondary btn-mc_mk mt-2 change-plan-button">
+                                                    class="btn btn-primary btn-mc_mk mt-2 change-plan-button">
                                                         {{ trans('messages.plan.select') }}
                                                 </a>
                                             </div>

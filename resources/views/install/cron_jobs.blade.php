@@ -11,7 +11,7 @@
 		<hr>
 		<div class="text-end">
 			@if($valid)
-				<a href="{{ action('InstallController@cronJobs') }}" class="btn btn-secondary">
+				<a href="{{ action('InstallController@cronJobs') }}" class="btn btn-primary">
 					<span class="material-symbols-rounded">settings</span> {!! trans('messages.change_cronjob_setting') !!}
 				</a>
 				<a href="{{ action('InstallController@finishing') }}" class="btn btn-primary">

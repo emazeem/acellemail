@@ -29,7 +29,7 @@
             'rules' => [],
         ])
 
-        <button type="submit" class="btn btn-secondary">{{ trans('messages.select_list.ok') }}</button>
+        <button type="submit" class="btn btn-primary">{{ trans('messages.select_list.ok') }}</button>
     </form>
 
     <script>

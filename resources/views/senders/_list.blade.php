@@ -54,7 +54,7 @@
 					<div class="btn-group">
 						@if (Auth::user()->can('read', $sender))
 							<a href="{{ action('SenderController@show', $sender->uid) }}"
-								role="button" class="btn btn-secondary">
+								role="button" class="btn btn-primary">
 									{{ trans('messages.sender.view') }}
 							</a>
 						@endif

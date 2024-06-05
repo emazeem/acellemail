@@ -63,7 +63,7 @@
             @if (\Auth::user()->admin->can('create', new Acelle\Model\Subscription()))
                 <div class="text-end">
                     <a href="{{ action("Admin\SubscriptionController@create") }}" role="button"
-                        class="btn btn-secondary modal-action new-subscription"
+                        class="btn btn-primary modal-action new-subscription"
                     >
                         <span class="material-symbols-rounded">add</span> {{ trans('messages.subscription.new') }}
                     </a>

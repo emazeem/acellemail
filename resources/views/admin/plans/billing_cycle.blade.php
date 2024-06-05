@@ -31,7 +31,7 @@
             </div>
         </div>
         <hr>
-        <button id="billingCycleSubmitButton" class="btn btn-secondary me-1">{{ trans('messages.plans.billing_cycle.save') }}</button>
+        <button id="billingCycleSubmitButton" class="btn btn-primary me-1">{{ trans('messages.plans.billing_cycle.save') }}</button>
         <a href="javascript:;" onclick="PlansCustomBillingCycle.getPopup().hide();" class="btn btn-link">{{ trans('messages.plans.billing_cycle.close') }}</a>
     </form>
 

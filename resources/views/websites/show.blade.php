@@ -75,7 +75,7 @@
             ]) }}"&gt;&lt;/script&gt;</code></pre>
         </div>
         <div class="">
-            <a href="javascript:;" class="btn btn-secondary copy-connect-js">
+            <a href="javascript:;" class="btn btn-primary copy-connect-js">
                 {{ trans('messages.website.copy_code') }}
             </a>
         </div>
@@ -86,7 +86,7 @@
             <a href="{{ action('WebsiteController@disconnect', [
                 'uids' => [$website->uid],
             ]) }}"
-                role="button" class="btn btn-secondary disconnect-site">
+                role="button" class="btn btn-primary disconnect-site">
                 <span class="material-symbols-rounded me-1">pause_circle</span> {{ trans('messages.website.disconnect') }}
             </a>
         @endif

@@ -28,7 +28,7 @@
 					@can("translate", $language)
 						<a href="{{ action('Admin\LanguageController@translateIntro', [
 							"id" => $language->uid,
-						]) }}" data-popup="tooltip" title="{{ trans('messages.translate') }}" role="button" class="btn btn-secondary btn-icon"><i class="icon-share2"></i> {{ trans('messages.translate') }}</a>
+						]) }}" data-popup="tooltip" title="{{ trans('messages.translate') }}" role="button" class="btn btn-primary btn-icon"><i class="icon-share2"></i> {{ trans('messages.translate') }}</a>
 					@endcan
 					@if(Auth::user()->can("delete", $language) ||
 						Auth::user()->can("update", $language) ||

@@ -23,10 +23,10 @@
                     <p class="desc text-muted mt-1 mb-0">
                         <span class="fw-600">{{ $automation->mailList->readCache('SubscriberCount', '#') }}</span>
                         {{ trans('messages.automation.overview.contacts') }}
-                        ·  
+                        ·
                         <span class="fw-600">{{ $automation->countEmails() }}</span>
                         {{ trans('messages.emails') }}
-                        ·  
+                        ·
                         <span class="fw-600">{{ $automation->readCache('SummaryStats') ? number_to_percentage($automation->readCache('SummaryStats')['complete']) : '#' }}</span>
                         {{ trans('messages.complete') }}
                     </p>

@@ -44,7 +44,7 @@
                 @endif
             </div>
             <div class="text-end">
-                <a href="javascript:goToDownLoad('unsubscribe_logs')" role="button" class="btn btn-secondary">
+                <a href="javascript:goToDownLoad('unsubscribe_logs')" role="button" class="btn btn-primary">
                     <i class="icon icon-download me-1"></i> {{ trans('messages.unsubscribe_log.download') }}
                 </a>
             </div>

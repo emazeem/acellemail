@@ -16,8 +16,8 @@
             </div>
         </div>                
         
-        <a href="javascript:;" class="btn btn-secondary mt-4 me-2" onclick="sidebar.load(); popup.hide()">{{ trans('messages.close') }}</a>
-        <a id="sendTestEmail" href="javascript:;" class="btn btn-secondary mt-4">
+        <a href="javascript:;" class="btn btn-primary mt-4 me-2" onclick="sidebar.load(); popup.hide()">{{ trans('messages.close') }}</a>
+        <a id="sendTestEmail" href="javascript:;" class="btn btn-primary mt-4">
             {{ trans('messages.automation.send_test_email') }}
         </a>
     </form>

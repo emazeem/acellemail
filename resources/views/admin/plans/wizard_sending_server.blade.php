@@ -145,7 +145,7 @@
         </div>
 
         <div class="mt-4 text-center">
-            <button onClick="$('#wizard').submit();" class="btn btn-secondary me-2">{{ trans('messages.plan.wizard.finish') }}</button>
+            <button onClick="$('#wizard').submit();" class="btn btn-primary me-2">{{ trans('messages.plan.wizard.finish') }}</button>
             <a href="javascript:;" onclick="PlansIndex.getWizardPopup().hide()" class="btn btn-link me-2" data-dismiss="modal">{{ trans('messages.plan.wizard.cancel') }}</a>
         </div>
         

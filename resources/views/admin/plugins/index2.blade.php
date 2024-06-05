@@ -49,7 +49,7 @@
 					<p class="mb-0">{{ trans('messages.plugin.wording') }}</p>
 				</div>
 				<div class="text-end ms-auto">
-					<a href="{{ action("Admin\PluginController@install") }}" role="button" class="btn btn-secondary text-nowarp ms-3">
+					<a href="{{ action("Admin\PluginController@install") }}" role="button" class="btn btn-primary text-nowarp ms-3">
 						<span class="material-symbols-rounded">add</span> {{ trans('messages.install_plugin') }}
 					</a>
 				</div>
@@ -65,7 +65,7 @@
 						@if ($plugins->count() >= 0)
 							<div class="filter-box">
 								<div class="dropdown list_actions" style="display: none">
-									<button role="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+									<button role="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
 										{{ trans('messages.actions') }} <span class="number"></span><span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
